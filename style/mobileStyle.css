@@ -189,12 +189,109 @@ section h1 {
     font-size: 1em;
     padding: 0px 15%;
 }
-.exp-date2{
+
+.exp-date2 {
     margin: 7px auto;
     font-weight: 100;
 }
 
 /********   EXPERIENCE 2   ********/
+
+.experience3 {
+    display: flex;
+    border: 1px solid;
+}
+
+/********   EXPERIENCE 4   ********/
+
+.experience4 {
+    margin: 10px 0px;
+    border: 1px solid red;
+    float: left;
+}
+
+.divDatePos4 {
+    float: left;
+}
+
+.exp-pos4 {
+    margin: 0px 5px;
+    float: left;
+    font-weight: bold;
+}
+
+.exp-plc4 {
+    margin: 3px 5px;
+    text-align: left;
+    float: left;
+}
+
+.divPlacePara4 {
+    float: left;
+}
+
+.exp-date4 {
+    margin: 10px 0px;
+    width: 100%;
+    text-align: left;
+}
+
+#expPara4 {
+    margin: 10px 0px;
+    text-align: left;
+}
+
+/********   EXPERIENCE 4   ********/
+
+/********   EXPERIENCE 5   ********/
+
+.experience5 {
+    background-color: rgba(17, 212, 150, 0.4);
+    border: 1px solid green;
+    float: left;
+    display: inline-block;
+}
+
+.divDatePos5 {
+    float: left;
+    display: inline-block;
+    background-color: rgba(255, 255, 0, 0.5);
+    width: 100%;
+    vertical-align: middle;
+}
+
+.exp-pos5 {
+    width: 33%;
+    float: left;
+    font-weight: bold;
+    margin: 6% 0px;
+    font-size: 1em;
+}
+
+#expPlace5 {
+    background-color: dodgerblue;
+    /*    text-align: left;*/
+    float: left;
+    width: 67%;
+}
+
+.divPlacePara5 {
+    float: left;
+}
+
+.exp-date5 {
+    margin: 10px 0px;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+}
+
+#expPara5 {
+    margin: 10px 0px;
+    text-align: left;
+}
+
+/********   EXPERIENCE 5   ********/
 
 footer {
     margin-top: 40em;
@@ -208,7 +305,7 @@ footer hr {
 }
 
 .center {
-    padding: 30px;
+    padding: 0 4%;
     background-color: rgba(111, 111, 111, 0.2);
     text-align: center;
     max-width: 100%;
