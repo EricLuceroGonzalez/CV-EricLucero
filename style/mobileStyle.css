@@ -141,7 +141,7 @@ section h1 {
 .divDatePos {
     padding: 15px 1px;
     display: inline-block;
-    background-color: rgba(16, 238, 168,0);
+    background-color: rgba(16, 238, 168, 0);
     float: left;
     width: 33.33%;
 }
@@ -157,14 +157,14 @@ section h1 {
 
 .divPlacePara {
     padding: 15px 5px;
-    background-color: rgba(10, 230, 125,0);
+    background-color: rgba(10, 230, 125, 0);
     width: 66.67%;
     float: right;
 }
 
 .exp-plc {
     font-weight: 400;
-/*    color: white;*/
+    /*    color: white;*/
 }
 
 .exp-para {
@@ -173,6 +173,28 @@ section h1 {
     font-size: 0.75em;
     margin-top: 6px;
 }
+
+/********   EXPERIENCE 2   ********/
+
+.experience2 {
+    border: 2px solid;
+}
+
+.exp-pos2 {
+    margin: 4px auto;
+}
+
+.exp-plc2 {
+    margin: 4px auto;
+    font-size: 1em;
+    padding: 0px 15%;
+}
+.exp-date2{
+    margin: 7px auto;
+    font-weight: 100;
+}
+
+/********   EXPERIENCE 2   ********/
 
 footer {
     margin-top: 40em;
