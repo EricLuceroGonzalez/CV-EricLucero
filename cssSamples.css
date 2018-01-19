@@ -63,8 +63,8 @@ img {
 hr {
     border-top: 1px solid #ccc;
     border-bottom: none;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 3em;
+    margin-bottom: 2em;
 }
 
 header h1 {
@@ -133,20 +133,133 @@ section h1 {
 }
 
 .experience {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid;
+}
+
+.divDatePos {
+    padding: 15px 1px;
+    display: inline-block;
+    background-color: rgba(16, 238, 168, 0);
+    float: left;
+    width: 33.33%;
+}
+
+.exp-date {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.exp-pos {
+    font-weight: 200;
+}
+
+.divPlacePara {
+    padding: 15px 5px;
+    background-color: rgba(10, 230, 125, 0);
+    width: 66.67%;
+    float: right;
+}
+
+.exp-plc {
+    font-weight: 400;
+    /*    color: white;*/
+}
+
+.exp-para {
+    font-weight: 100;
+    text-align: center;
+    font-size: 0.75em;
+    margin-top: 6px;
+}
+
+/********   EXPERIENCE 2   ********/
+
+.experience2 {
+    border: 2px solid;
+}
+
+.exp-pos2 {
+    margin: 4px auto;
+}
+
+.exp-plc2 {
+    margin: 4px auto;
+    font-size: 1em;
+    padding: 0px 15%;
+}
+
+.exp-date2 {
+    margin: 7px auto;
+    font-weight: 100;
+}
+
+/********   EXPERIENCE 2   ********/
+
+.experience3 {
+    display: flex;
+    border: 1px solid;
+}
+
+/********   EXPERIENCE 4   ********/
+
+.experience4 {
+    margin: 10px 0px;
+    border: 1px solid red;
+    float: left;
+}
+
+.divDatePos4 {
+    float: left;
+}
+
+.exp-pos4 {
+    margin: 0px 5px;
+    float: left;
+    font-weight: bold;
+}
+
+.exp-plc4 {
+    margin: 3px 5px;
+    text-align: left;
+    float: left;
+}
+
+.divPlacePara4 {
+    float: left;
+}
+
+.exp-date4 {
+    margin: 10px 0px;
+    width: 100%;
+    text-align: left;
+}
+
+#expPara4 {
+    margin: 10px 0px;
+    text-align: left;
+}
+
+/********   EXPERIENCE 4   ********/
+
+/********   EXPERIENCE 5   ********/
+
+.experience5 {
 margin: 3% 0%;
     border: 1px solid rgba(17, 212, 150, 1);
     box-shadow: 4px 7px 0px rgba(17, 212, 150, 0.4);
     display: inline-block;
 }
 
-.divDatePos {
+.divDatePos5 {
     float: left;
     display: inline-block;
     width: 100%;
     height: 60px;
 }
 
-.exp-pos {
+.exp-pos5 {
     width: 33%;
     float: left;
     font-weight: bold;
@@ -161,7 +274,7 @@ margin: 3% 0%;
     /* the same as your div height */
 }
 
-#expPlace {
+#expPlace5 {
     height: 100%;
     background-color: rgba(17, 212, 150, 1);
     text-align: center;
@@ -170,12 +283,12 @@ margin: 3% 0%;
     font-size: 0.8em;
 }
 
-.divPlacePara {
+.divPlacePara5 {
     float: left;
     margin-left: 3%;
 }
 
-.exp-date {
+.exp-date5 {
     margin: 10px 0px;
     width: 100%;
     text-align: left;
@@ -183,7 +296,7 @@ margin: 3% 0%;
     color: rgba(0, 202, 160, 1);
 }
 
-#expPara {
+#expPara5 {
     margin: 10px 0px;
     text-align: left;
 }
@@ -202,15 +315,10 @@ footer hr {
 }
 
 .center {
-    padding: 2% 2%;
-/*    background-color: rgba(111, 111, 111, 0.2);*/
-    background: linear-gradient(to bottom right, rgba(111, 111, 111, 0.3), rgba(17, 212, 150, 0.1));
+    padding: 0 4%;
+    background-color: rgba(111, 111, 111, 0.2);
     text-align: center;
     max-width: 100%;
-}
-
-section h1{
-    margin-bottom: 1em;
 }
 
 @media (min-width: 741px) {
