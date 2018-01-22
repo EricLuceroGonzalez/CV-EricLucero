@@ -127,6 +127,16 @@ section h1 {
     font-weight: 300;
 }
 
+.divTest{
+    font-weight: bold;    
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    padding: 5px;
+    margin-left: 20px;
+    top: 20px;
+    transform: rotate(-53deg);
+}
 .experience {
     margin: 3% 0%;
     border: 1px solid rgba(17, 212, 150, 1);
@@ -283,9 +293,6 @@ footer hr {
 
 /***************  FOOTER ***************/
 
-section h1 {
-    margin-bottom: 1em;
-}
 
 /*************  ICONS   ****************/
 
