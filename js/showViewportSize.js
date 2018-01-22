@@ -19,7 +19,7 @@ window.addEventListener('load', function(){
         var touchobj = e.changedTouches[0] // reference first touch point (ie: first finger)
         startx = parseInt(touchobj.clientX) // get x position of touch point relative to left edge of browser
         statusdiv.innerHTML = 'Status: touchstart<br> ClientX: ' + startx + 'px'
-        statusdiv.style.backgroundColor = 'black';
+        box1.style.backgroundColor = 'black';
         e.preventDefault()
     }, false)
  
@@ -27,14 +27,14 @@ window.addEventListener('load', function(){
         var touchobj = e.changedTouches[0] // reference first touch point for this event
         var dist = parseInt(touchobj.clientX) - startx
         statusdiv.innerHTML = 'Status: touchmove<br> Horizontal distance traveled: ' + dist + 'px'
-        statusdiv.style.backgroundColor = 'blue';
+        box1.style.backgroundColor = 'blue';
         e.preventDefault()
     }, false)
  
     box1.addEventListener('touchend', function(e){
         var touchobj = e.changedTouches[0] // reference first touch point for this event
         statusdiv.innerHTML = 'Status: touchend<br> Resting x coordinate: ' + touchobj.clientX + 'px'
-        statusdiv.style.backgroundColor = 'yellow';
+        box1.style.backgroundColor = 'yellow';
         e.preventDefault()
     }, false)
  
