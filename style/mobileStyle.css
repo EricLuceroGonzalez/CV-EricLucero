@@ -137,6 +137,10 @@ section h1 {
     top: 20px;
     transform: rotate(-53deg);
 }
+.divTest a{
+    text-decoration: none;
+    color: white;
+}
 .experience {
     margin: 3% 0%;
     border: 1px solid rgba(17, 212, 150, 1);
