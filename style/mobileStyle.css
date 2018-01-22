@@ -268,6 +268,7 @@ section h1 {
 }
 
 /***************  FOOTER ***************/
+
 footer {
     background-color: black;
     margin-top: 40em;
@@ -279,7 +280,9 @@ footer hr {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
 /***************  FOOTER ***************/
+
 section h1 {
     margin-bottom: 1em;
 }
@@ -298,7 +301,7 @@ section h1 {
     width: 42px;
     text-align: center;
     text-decoration: none;
-        border-radius: 50%;
+    border-radius: 50%;
 }
 
 /* Add a hover effect if you want */
@@ -309,13 +312,22 @@ section h1 {
 
 /* Set a specific color for each brand */
 
+/* Whatsapp */
+
+.fa-whatsapp {
+    background: green;
+    color: white;
+}
+
 /* Facebook */
+
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
 
 /* Twitter */
+
 .fa-twitter {
     background: #55ACEE;
     color: white;
