@@ -32,7 +32,7 @@ a:hover {
 }
 
 header {
-    background-color: rgb(16, 238, 168);
+    background-color: rgb(24, 255, 255);
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
@@ -85,14 +85,6 @@ header p {
     padding-top: 3.5em;
 }
 
-#div-example {
-    padding: 10px;
-    margin: 0 auto;
-    box-shadow: 6px 5px green;
-    background-color: palegreen;
-    max-width: 60%;
-}
-
 .span-light {
     color: white;
     font-weight: 100;
@@ -100,26 +92,29 @@ header p {
 }
 
 .span-1 {
-    color: indianred;
+    color: rgba(213, 0, 249, 1);
     font-weight: 100;
     text-shadow: none;
 }
 
 .span-2 {
-    color: indianred;
+    color: rgba(213, 0, 249, 1);
+    ;
     font-weight: 100;
     text-shadow: none;
 }
 
 .span-3 {
-    color: indianred;
+    color: rgba(213, 0, 249, 1);
+    ;
     font-weight: 700;
     text-shadow: none;
     text-shadow: 1px 2px 0 rgba(155, 55, 50, 0.25);
 }
 
 .span-4 {
-    color: rebeccapurple;
+    color: rgba(213, 0, 249, 1);
+    ;
     font-weight: 100;
     text-shadow: none;
 }
@@ -133,7 +128,7 @@ section h1 {
 }
 
 .experience {
-margin: 3% 0%;
+    margin: 3% 0%;
     border: 1px solid rgba(17, 212, 150, 1);
     box-shadow: 4px 7px 0px rgba(17, 212, 150, 0.4);
     display: inline-block;
@@ -190,6 +185,82 @@ margin: 3% 0%;
 
 /********   EXPERIENCE 5   ********/
 
+.education {
+    margin: 3% 0%;
+    border: 2px solid rgba(255, 0, 0, 1);
+    box-shadow: 4px 7px 0px rgba(255, 0, 0, 0.4);
+    display: inline-block;
+}
+
+.divDatetitle {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+}
+
+.edu-title {
+    position: relative;
+    width: 50%;
+    float: left;
+    font-weight: bold;
+    font-size: 1.25em;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(17, 212, 150, 1);
+}
+
+.edu-title p {
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px rgba(12, 140, 100, 1);
+    vertical-align: middle;
+    display: table-cell;
+    top: 20%;
+    line-height: 25px;
+}
+
+#eduPlace {
+    height: 100%;
+    background-color: rgba(17, 212, 150, 1);
+    text-align: center;
+    float: left;
+    width: 50%;
+    font-size: 1.25em;
+    padding: 12px;
+    font-family: 'Lato', sans-serif;
+}
+
+#eduPlace p {
+    line-height: 20px;
+    padding: 10px;
+}
+
+.divPlacePara {
+    float: left;
+    margin-left: 3%;
+}
+
+#edu-usma {
+    font-size: 0.8em;
+}
+
+.edu-date {
+    margin: 10px 0px;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    color: rgba(0, 202, 160, 1);
+}
+
+#eduPara {
+    margin: 10px 0px;
+    text-align: left;
+}
+
+
+
 footer {
     margin-top: 40em;
     margin-bottom: 1em;
@@ -203,39 +274,128 @@ footer hr {
 
 .center {
     padding: 2% 2%;
-/*    background-color: rgba(111, 111, 111, 0.2);*/
+    /*    background-color: rgba(111, 111, 111, 0.2);*/
     background: linear-gradient(to bottom right, rgba(111, 111, 111, 0.3), rgba(17, 212, 150, 0.1));
     text-align: center;
     max-width: 100%;
 }
 
-section h1{
+section h1 {
     margin-bottom: 1em;
+}
+
+#dimensions {
+    background-color: rgba(17, 212, 150, 0.4);
+    box-shadow: 6px 7px 10px gray;
+    padding: 6px;
+    text-align: center;
+    font-size: 1em;
+    position: fixed;
+    bottom: 1px;
+    right: 25px;
 }
 
 @media (min-width: 741px) {
     header {
         background-color: red;
     }
-    #div-example {
-        background-color: ghostwhite;
-        max-width: 60%;
-    }
     header p {
         font-size: 95%;
         margin-top: 1em;
+    }
+    #dimensions {
+        background-color: rgba(255, 0, 50, 0.4);
     }
 }
 
 /*@media all and (max-width: 768px) { ... }*/
 
-#dimensions{
-    background-color: rgba(17, 212, 150, 1);
-    box-shadow: 6px 7px 10px gray;
-    width: 35%;
-    text-align: center;
-    font-size: 2em;
-    position: fixed;
-    top: 93%;
-    left: 60%;
+/***************  Animation  ***************/
+
+header {
+    width: 100wh;
+    /*	height: 90vh;*/
+    color: #fff;
+    /*    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
+    background: linear-gradient(-45deg,
+    rgba(238, 119, 82, 1),
+    rgba(231, 60, 126, 1),
+    rgba(35, 166, 213, 1),
+    rgba(35, 213, 171, 1));
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 30s ease infinite;
+    -moz-animation: Gradient 30s ease infinite;
+    animation: Gradient 30s ease infinite;
 }
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/*
+header p {
+    -webkit-animation: Gradientp 15s ease infinite;
+    -moz-animation: Gradientp 15s ease infinite;
+    animation: Gradientp 15s ease infinite;
+}
+*/
+
+#hdrSpn {
+    -webkit-animation: Gradientp 25s ease infinite;
+    -moz-animation: Gradientp 25s ease infinite;
+    animation: Gradientp 25s ease infinite;
+}
+
+@keyframes Gradientp {
+    0% {
+        color: rgba(35, 213, 171, 1);
+    }
+    25% {
+        color: white;
+    }
+    50% {
+        color: rgba(238, 119, 82, 1);
+        ;
+    }
+    75% {
+        color: white;
+    }
+    100% {
+        color: rgba(231, 60, 126, 1);
+    }
+}
+
+
+/***************  Animation  ***************/
