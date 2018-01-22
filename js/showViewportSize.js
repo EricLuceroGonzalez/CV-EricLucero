@@ -8,10 +8,10 @@ function displayWindowSize() {
     document.getElementById("dimensions").innerHTML = myWidth + "x" + myHeight;
 };
 
-window.addEventListener('load', function(){ // on page load
- 
-    document.getElementById("dimensions").addEventListener('touchstart', function(e){
-        alert(e.changedTouches[0].pageX) // alert pageX coordinate of touch point
+window.addEventListener('load', function () { // on page load
+var dime = document.getElementById("dimensions");
+    dime.addEventListener('touchstart', function (e) {
+        dime.textContent = 'sdssds';
     }, false)
- 
-}, false)
+
+}, false);
