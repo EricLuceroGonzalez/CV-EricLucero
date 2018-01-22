@@ -120,27 +120,13 @@ header p {
 }
 
 section h1 {
+    font-family: 'Raleway', sans-serif;
     font-size: 1.8em;
     line-height: 1em;
     margin-bottom: .6em;
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
 
-.divTest{
-    font-weight: bold;    
-    color: white;
-    background-color: rgba(0,0,0,0.7);
-    position: fixed;
-    padding: 5px;
-    margin-left: 20px;
-    top: 20px;
-    transform: rotate(-53deg);
-}
-.divTest a{
-    text-decoration: none;
-    color: white;
-}
 .experience {
     margin: 3% 0%;
     border: 1px solid rgba(17, 212, 150, 1);
@@ -199,11 +185,26 @@ section h1 {
 
 /********   EXPERIENCE 5   ********/
 
+.grade {
+/*    background-color: mediumpurple;*/
+    background-color: rgba(57, 252, 190, 0.7);
+    width: 107px;
+    padding: 8px;
+    transform: rotate(-6deg);
+    margin: -20px 0px;
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 2px 2px green;    
+    font-family: 'Catamaran', sans-serif;
+
+}
+
 .education {
     margin: 3% 0%;
-    border: 2px solid rgba(255, 0, 0, 1);
-    box-shadow: 4px 7px 0px rgba(255, 0, 0, 0.4);
+/*    border: 2px solid rgba(255, 0, 0, 1);*/
+    box-shadow: 5px 7px 4px rgba(0, 120, 80, 0.4);
     display: inline-block;
+    margin-top: 20px;
 }
 
 .divDatetitle {
@@ -214,7 +215,7 @@ section h1 {
 }
 
 .edu-title {
-    position: relative;
+    /*    position: relative;*/
     width: 50%;
     float: left;
     font-weight: bold;
@@ -226,13 +227,13 @@ section h1 {
 }
 
 .edu-title p {
-    position: absolute;
+    position: relative;
     color: white;
     text-shadow: 2px 2px rgba(12, 140, 100, 1);
     vertical-align: middle;
     display: table-cell;
-    top: 20%;
     line-height: 25px;
+    padding: 16px;
 }
 
 #eduPlace {
@@ -285,8 +286,8 @@ section h1 {
 
 footer {
     background-color: black;
-    margin-top: 40em;
-    margin-bottom: 1em;
+    margin-top: 20em;
+    margin-bottom: 36px;
     color: #888;
 }
 
@@ -296,7 +297,6 @@ footer hr {
 }
 
 /***************  FOOTER ***************/
-
 
 /*************  ICONS   ****************/
 
@@ -355,17 +355,6 @@ footer hr {
 }
 
 /*************  ICONS   ****************/
-
-#dimensions {
-    background-color: rgba(17, 212, 150, 0.4);
-    box-shadow: 6px 7px 10px gray;
-    padding: 6px;
-    text-align: center;
-    font-size: 1em;
-    position: fixed;
-    bottom: 1px;
-    right: 25px;
-}
 
 @media (min-width: 741px) {
     header {
@@ -484,12 +473,68 @@ header p {
     }
 }
 
+.grade {
+    -webkit-animation: Gradient-grade 10s ease infinite;
+    -moz-animation: Gradient-grade 10s ease infinite;
+    animation: Gradient-grade 10s ease infinite;
+}
+
+@keyframes Gradient-grade {
+    0% {
+        transform: rotate(-2deg);
+    }
+    25% {
+        transform: rotate(-8deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+    }
+
+}
+
+
 /***************  Animation  ***************/
 
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: red;
+.divDescarga {
+    font-weight: bold;
+    font-size: 0.65em;
+    color: white;
+    background-color: rgba(190, 0, 0, 0.7);
+    position: fixed;
+    padding: 0px 12px;
+    margin-left: 12px;
+    bottom: 5px;
+}
+
+.divDescarga a {
+    text-decoration: none;
+    color: white;
+}
+
+.divDescarga a:hover {
+    color: skyblue;
+}
+
+#dimensions {
+    background-color: rgba(17, 212, 150, 0.4);
+/*    box-shadow: 6px 7px 10px gray;*/
+    padding: 2px;
     text-align: center;
-    margin: auto;
+    font-size: 0.55em;
+    position: fixed;
+    bottom: 0.5px;
+    left: 47%;
+}
+#underConstr{
+    background-color: rgb(17, 212, 150);
+    box-shadow: 4px 3px 5px gray;
+    padding: 6px;
+    text-align: center;
+    font-size: 0.75em;
+    position: fixed;
+    bottom: 6px;
+    right: 7px;
+}
+#Llave{
+    font-size: 1.5em;
 }

@@ -5,13 +5,18 @@
     <meta charset="utf-8" />
     <title>Responsive Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Custom fonts. To improve load times, remove this and update the h1 styling in style.css-->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
     <!-- stylesheets -->
     <link rel="stylesheet" href="style/mobileStyle.css" type="text/css" />
-    <!--    Icons library-->
-    <!-- Add icon library -->
+    <!-- **************    Icons library   **************-->
+    <!-- Add icon library: Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add icon library: Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--**************    Fonts  **************-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:900|Raleway:200" rel="stylesheet">
+    <!--Custom fonts. To improve load times, remove this and update the h1 styling in style.css-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+
     <!-- just in case viewer is using Internet Explorer -->
     <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -29,14 +34,13 @@
             <span class="span-4" id="hdrSpn">Computacion </span>
         </p>
     </header>
-        <div class="divTest"><a href="media/00-CV-EricLucero-2018.pdf" download>Descargar</a></div>
+    <div class="divDescarga"><a href="media/00-CV-EricLucero-2018.pdf" download>Descargar pdf<i class="fa fa-file-pdf-o"></i></a></div>
     <br>
-
     <!--Experiencia-->
     <section class="center">
-        <h1>Experiencia</h1>
+        <h1>Experiencia <i class="material-icons">assignment</i></h1>
         <hr>
-        <section class="experience" id="exp-1">
+        <section class="experience">
             <!--           Date and Position-->
             <div class="divDatePos">
                 <div class="exp-pos">Docencia</div>
@@ -56,7 +60,7 @@
             </div>
             <!--            Place and description            -->
         </section>
-        <section class="experience" id="exp-1">
+        <section class="experience">
             <!--           Date and Position-->
             <div class="divDatePos">
                 <div class="exp-pos">Becario</div>
@@ -76,7 +80,7 @@
             </div>
             <!--            Place and description            -->
         </section>
-        <section class="experience" id="exp-1">
+        <section class="experience">
             <!--           Date and Position-->
             <div class="divDatePos">
                 <div class="exp-pos">Docente</div>
@@ -96,7 +100,7 @@
             </div>
             <!--            Place and description            -->
         </section>
-        <section class="experience" id="exp-1">
+        <section class="experience">
             <!--           Date and Position-->
             <div class="divDatePos">
                 <div class="exp-pos">Meteorólogo</div>
@@ -117,7 +121,7 @@
             <!--            Place and description            -->
         </section>
 
-        <section class="experience" id="exp-1">
+        <section class="experience">
             <!--           Date and Position-->
             <div class="divDatePos">
                 <div class="exp-pos">Docente</div>
@@ -142,13 +146,14 @@
     <hr>
     <!--Formacion-->
     <section class="center">
-        <h1>Formacion</h1>
+        <h1>Formación <i class="material-icons">school</i></h1>
         <hr>
-        <section class="education" id="edu-1">
+        <section class="education">
+            <section class="grade">Maestría</section>
             <!--           Date and titleition-->
             <div class="divDatetitle">
                 <div class="edu-title">
-                    <p>Maestría en Ingeniería Matemática</p>
+                    <p>Ingeniería Matemática</p>
                 </div>
                 <div class="edu-plc" id="eduPlace">
                     <p>Universidad Tecnológica de Panamá</p>
@@ -166,7 +171,31 @@
                 </p>
             </div>
         </section>
-        <section class="education" id="edu-1">
+        <section class="education">
+            <section class="grade">Posgrado</section>
+            <!--           Date and titleition-->
+            <div class="divDatetitle">
+                <div class="edu-title">
+                    <p>Docencia Universitaria</p>
+                </div>
+                <div class="edu-plc" id="eduPlace">
+                    <p id="edu-usma">Universidad Católica Santa María La Antigua</p>
+                    <!--                    <h3></h3>-->
+                </div>
+            </div>
+            <!--           Date and titleition-->
+            <!--            Place and description            -->
+            <div class="divPlacePara">
+                <div class="edu-date">
+                    2012 - 2013
+                </div>
+                <p class="edu-para" id="eduPara">
+                    Posgrado en docencia superior con un enfoque en el aprendizaje significativo y estrategias para aprender a aprender.
+                </p>
+            </div>
+        </section>
+        <section class="education">
+            <section class="grade">Licenciatura</section>
             <!--           Date and titleition-->
             <div class="divDatetitle">
                 <div class="edu-title">
@@ -187,35 +216,13 @@
                 </p>
             </div>
         </section>
-        <section class="education" id="edu-1">
+
+        <section class="education">
+            <section class="grade">Licenciatura</section>
             <!--           Date and titleition-->
             <div class="divDatetitle">
                 <div class="edu-title">
-                    <p>Especialista en Docencia Universitaria</p>
-                </div>
-                <div class="edu-plc" id="eduPlace">
-                    <p id="edu-usma">Universidad Católica Santa María La Antigua</p>
-                    <!--                    <h3></h3>-->
-                </div>
-            </div>
-            <!--           Date and titleition-->
-            <!--            Place and description            -->
-            <div class="divPlacePara">
-                <div class="edu-date">
-                    2012 - 2013
-                </div>
-                <p class="edu-para" id="eduPara">
-                    Posgrado en docencia superior con un enfoque en el aprendizaje significativo y estrategias para aprender a aprender.
-                </p>
-            </div>
-        </section>
-        <section class="education" id="edu-1">
-            <!--           Date and titleition-->
-            <div class="divDatetitle">
-                <div class="edu-title">
-                    <p>
-                        Licenciatura en Física
-                    </p>
+                    <p>Física</p>
                 </div>
                 <div class="edu-plc" id="eduPlace">
                     <p>Universidad de Panamá</p>
@@ -237,6 +244,8 @@
     </section>
     <hr>
     <p id="dimensions"></p>
+    <div id="underConstr"><i class="material-icons" id="Llave">build</i> Sitio en desarrollo</div>
+
     <!--Footer-->
     <footer class="center">
         <div class="icons-div">
@@ -254,7 +263,7 @@
     <!--    <script src="js/cvEric1.js"></script>-->
     <script src="js/showViewportSize.js"></script>
     <script src="js/touch-event0.js"></script>
-<!--    <script src="js/downloadFile.js"></script>-->
+    <!--    <script src="js/downloadFile.js"></script>-->
 </body>
 
 </html>
