@@ -31,6 +31,83 @@ a:hover {
     color: #6594e0;
 }
 
+/*********************  Nav Bar  *********************/
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    overflow: hidden;
+    /*        position: fixed;*/
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px 12px;
+    text-decoration: none;
+    font-size: 0.75em;
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+
+.active {
+    background-color: rgba(121, 58, 198,0.25);
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 600px) {
+    .active{
+        display: none!important
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        right: 2px;
+        position: fixed;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/*********************  Nav Bar  *********************/
+
 header {
     background-color: rgb(24, 255, 255);
     background-repeat: no-repeat;
@@ -134,7 +211,7 @@ section h1 {
     display: inline-block;
 }
 
-.divDatePos {
+.divPlacePos {
     float: left;
     display: inline-block;
     width: 100%;
@@ -165,43 +242,39 @@ section h1 {
     font-size: 0.8em;
 }
 
-.divPlacePara {
-    float: left;
-    margin-left: 3%;
-}
-
 .exp-date {
     margin: 10px 0px;
     width: 100%;
     text-align: left;
     font-weight: 500;
-    color: rgba(0, 202, 160, 1);
+    color: rgb(121, 58, 198);
 }
 
 #expPara {
-    margin: 10px 0px;
+    font-size: 0.75em;
     text-align: left;
+    padding: 10px 20px;
 }
 
 /********   EXPERIENCE 5   ********/
 
 .grade {
-/*    background-color: mediumpurple;*/
-    background-color: rgba(57, 252, 190, 0.7);
+    color: white;
+    background-color: rgba(121, 58, 198, 0.85);
     width: 107px;
     padding: 8px;
     transform: rotate(-6deg);
     margin: -20px 0px;
     position: absolute;
     border-radius: 8px;
-    box-shadow: 2px 2px green;    
+    box-shadow: 3px 3px 3px gray;
     font-family: 'Catamaran', sans-serif;
 
 }
 
 .education {
     margin: 3% 0%;
-/*    border: 2px solid rgba(255, 0, 0, 1);*/
+    /*    border: 2px solid rgba(255, 0, 0, 1);*/
     box-shadow: 5px 7px 4px rgba(0, 120, 80, 0.4);
     display: inline-block;
     margin-top: 20px;
@@ -252,7 +325,7 @@ section h1 {
     padding: 10px;
 }
 
-.divPlacePara {
+.divDatePara {
     float: left;
     margin-left: 3%;
 }
@@ -266,12 +339,13 @@ section h1 {
     width: 100%;
     text-align: left;
     font-weight: 500;
-    color: rgba(0, 202, 160, 1);
+    color: rgb(121, 58, 198);
 }
 
 #eduPara {
-    margin: 10px 0px;
+    font-size: 0.75em;
     text-align: left;
+    padding: 10px 20px;
 }
 
 .center {
@@ -474,9 +548,9 @@ header p {
 }
 
 .grade {
-    -webkit-animation: Gradient-grade 10s ease infinite;
-    -moz-animation: Gradient-grade 10s ease infinite;
-    animation: Gradient-grade 10s ease infinite;
+    -webkit-animation: Gradient-grade 6s ease infinite;
+    -moz-animation: Gradient-grade 6s ease infinite;
+    animation: Gradient-grade 6s ease infinite;
 }
 
 @keyframes Gradient-grade {
@@ -499,7 +573,7 @@ header p {
     font-weight: bold;
     font-size: 0.65em;
     color: white;
-    background-color: rgba(190, 0, 0, 0.7);
+    background-color: rgba(190, 0, 0, 0.8);
     position: fixed;
     padding: 0px 12px;
     margin-left: 12px;
@@ -511,13 +585,13 @@ header p {
     color: white;
 }
 
-.divDescarga a:hover {
-    color: skyblue;
+.divDescarga:hover {
+    background-color: rgba(250, 0, 0, 0.8);
 }
 
 #dimensions {
-    background-color: rgba(17, 212, 150, 0.4);
-/*    box-shadow: 6px 7px 10px gray;*/
+    background-color: rgba(255, 159, 10, 1);
+    /*    box-shadow: 6px 7px 10px gray;*/
     padding: 2px;
     text-align: center;
     font-size: 0.55em;
@@ -525,16 +599,31 @@ header p {
     bottom: 0.5px;
     left: 47%;
 }
-#underConstr{
-    background-color: rgb(17, 212, 150);
-    box-shadow: 4px 3px 5px gray;
-    padding: 6px;
-    text-align: center;
-    font-size: 0.75em;
+
+#underConstr {
+    padding: 8px 10px 0px 10px;
     position: fixed;
     bottom: 6px;
     right: 7px;
+    box-shadow: 4px 3px 5px gray;
+    background: repeating-linear-gradient( 45deg,
+    #F5BE18,
+    #F5BE18 10px,
+    #373633 10px,
+    #373633 20px);
 }
-#Llave{
+
+#underConstr p {
+    width: 100%;
+    float: right;
+    color: white;
+    text-align: center;
+    font-size: 0.5em;
+    font-weight: bold;
+    font-family: 'Catamaran', sans-serif;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+#Llave {
     font-size: 1.5em;
 }
