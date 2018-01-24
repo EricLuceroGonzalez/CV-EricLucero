@@ -6,9 +6,9 @@
     <title>Responsive Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- stylesheets -->
-<!--    <link rel="stylesheet" href="style/mobileStyle.css" type="text/css" />-->
     <link rel="stylesheet" href="style/mobileStyle.css" type="text/css" />
-
+<!--    <link rel="stylesheet" href="style/topNav.css" type="text/css" />-->
+<!--  <link rel="stylesheet" href="sideNavBar.css" type="text/css" />-->
     <!-- **************    Icons library   **************-->
     <!-- Add icon library: Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,21 +28,19 @@
     <!-- Header-->
     <header>
 
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="about.html">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
         </div>
 
-        <h1> <span class="span-light">Eric</span> Lucero <span class="subtlt-1"></span></h1>
-        <p>
-            <span class="span-1" id="hdrSpn">Fisica | </span>
-            <span class="span-2" id="hdrSpn">Matematica | </span>
-            <span class="span-3" id="hdrSpn">Docencia | </span>
-            <span class="span-4" id="hdrSpn">Computacion </span>
-        </p>
+<span class="openNav" onclick="openNav()">&#9776;</span>
+
+        <h1> <span class="span-light"></span> About <span class="subtlt-1"></span></h1>
     </header>
     <br>
     <!--Experiencia-->
@@ -274,9 +272,20 @@
     <!--    <script src="js/cvEric1.js"></script>-->
     <script src="js/showViewportSize.js"></script>
     <script src="js/touch-event0.js"></script>
-    <!--    <script src="js/downloadFile.js"></script>-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/batmanNav.js"></script>
     <script src="js/topNav0.js"></script>
-       </body>
-        < /html>
+    <!--    <script src="js/downloadFile.js"></script>-->
+    <!--    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+    <!--    <script src="js/batmanNav.js"></script>-->
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+    </script>
+</body>
+
+</html>
