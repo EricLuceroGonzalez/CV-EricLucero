@@ -124,7 +124,7 @@ a:hover {
     }
 */
     .topnav.responsive a:not(:last-child) {
-        max-width:  width: 150px;
+        max-width: width: 150px;
         -webkit-animation: Gradient-navIcon 5s ease infinite;
         -moz-animation: Gradient-navIcon 5s ease infinite;
         animation: Gradient-navIcon 5s ease infinite;
@@ -132,7 +132,9 @@ a:hover {
 }
 
 /*********************  Nav Bar  *********************/
+
 /*********************  Nav Bar2  *********************/
+
 .overlay {
     height: 100%;
     width: 0;
@@ -140,8 +142,8 @@ a:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.75);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.75);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -157,40 +159,159 @@ a:hover {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
-/*    color: #818181;*/
+    font-size: 1.5em;
+    /*    color: #818181;*/
     color: rgba(238, 119, 82, 1);
     text-shadow: 1px 1px 2px black;
     display: block;
-    transition: 0.9s;
+    transition: 0.7s;
     font-family: 'Catamaran', sans-serif;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
     color: #f1f1f1;
 }
 
+/*
 .overlay .closebtn {
     position: absolute;
     top: 20px;
-    right: 45px;
-    font-size: 60px;
+    right: 5px;
+    font-size: 3em;
 }
+*/
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-.openNav{
+    .overlay a {
+        font-size: 20px
+    }
+/*
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+*/
+
+.openNav {
     position: fixed;
     right: 2px;
-    font-size:30px;
-    cursor:pointer;
+    font-size: 30px;
+    cursor: pointer;
 }
+
+.navWrap {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 10px;
+    right: 5px;
+}
+
+.divNaviBar {
+    float: right;
+    width: 8%;
+}
+
+.divNaviBar:hover {
+    cursor: pointer;
+}
+
+.topNaviBar {
+    background-color: rgb(121, 58, 198);
+}
+
+.middleNaviBar {
+    background-color: rgb(121, 58, 198);
+}
+
+.bottomNaviBar {
+    background-color: rgb(121, 58, 198);
+}
+
+.topNaviBar,
+.middleNaviBar,
+.bottomNaviBar {
+    display: block;
+    height: 4px;
+    margin: 6px 0px;
+    border-radius: 20px 20px;
+}
+
+.closebtn {
+/*    display: block;*/
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    right: 20px;
+}
+
+.divClose2 {
+    float: right;
+    width: 8%;
+}
+
+.close {
+    height: 4px;
+    /*    margin: 6px 0px;*/
+    display: block;
+    opacity: 0;
+}
+
+.bar1 {
+    /*    background-color: red;*/
+    /*    transform: rotate(-45deg);*/
+}
+
+.bar2 {
+    /*    background-color: yellow;*/
+    transform: translateY(-20px);
+}
+
+.bar1 {
+    /*    -webkit-animation: Gradient-topNavi 0.35s 1 linear forwards;*/
+    /*    -moz-animation: Gradient-topNavi 0.35s 1 linear forwards;*/
+    animation: Gradient-bar1 1.5s ease forwards;
+}
+
+@keyframes Gradient-bar1 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-20px);
+        transform: translateX(-50px);
+    }
+    100% {
+        background-color: rgba(238, 119, 82, 1);
+        opacity: 1;
+        transform: rotate(45deg);
+    }
+}
+
+.bar2 {
+    /*    -webkit-animation: Gradient-topNavi 0.35s 1 linear forwards;*/
+    /*    -moz-animation: Gradient-topNavi 0.35s 1 linear forwards;*/
+    animation: Gradient-bar2 2s ease forwards;
+}
+
+@keyframes Gradient-bar2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-30px);
+        transform: translateY(-20px);
+    }
+    100% {
+        background-color: rgba(238, 119, 82, 1);
+        opacity: 1;
+        transform: rotate(-45deg);
+    }
+}
+
+
+
 /*********************  Nav Bar2  *********************/
 
 /*****************************************/
@@ -506,7 +627,7 @@ footer hr {
 /*@media all and (max-width: 768px) { ... }*/
 
 /***************  Animation  ***************/
-#myNav,
+
 header {
     width: 100wh;
     /*	height: 90vh;*/
@@ -558,6 +679,62 @@ header {
         background-position: 0% 50%
     }
 }
+
+/*************        **************        *****/
+
+#myNav {
+    /*    width: 100wh;*/
+    /*	height: 90vh;*/
+    color: #fff;
+    /*    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
+    background: linear-gradient(-45deg,
+    rgba(238, 119, 82, 0.75),
+    rgba(231, 60, 126, 0.75),
+    rgba(35, 166, 213, 0.75),
+    rgba(35, 213, 171, 0.75));
+    background-size: 400% 400%;
+    -webkit-animation: GradientNavi 10s ease infinite;
+    -moz-animation: GradientNavi 10s ease infinite;
+    animation: GradientNavi 10s ease infinite;
+}
+
+@-webkit-keyframes GradientNavi {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes GradientNavi {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes GradientNavi {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/*************        **************        *****/
 
 /*
 header p {
@@ -659,6 +836,123 @@ header p {
     }
 }
 
+.topNaviBar,
+.middleNaviBar,
+.bottomNaviBar {
+    -webkit-animation: Gradient-divNBars 2s ease infinite;
+    -moz-animation: Gradient-divNBars 2s ease infinite;
+    animation: Gradient-divNBars 2s ease infinite;
+}
+
+@keyframes Gradient-divNBars {
+    0% {
+        background-color: rgba(127, 58, 198, 0.65);
+    }
+    40% {
+        transform: translateX(-12px);
+    }
+    80% {
+        background-color: rgb(121, 58, 198);
+    }
+}
+
+.topNB-clck {
+    -webkit-animation: Gradient-topNavi 0.35s 1 linear forwards;
+    -moz-animation: Gradient-topNavi 0.35s 1 linear forwards;
+    animation: Gradient-topNavi 0.35s 1 linear forwards;
+}
+
+@keyframes Gradient-topNavi {
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        background-color: rgba(95, 245, 191, 1);
+        transform: rotate(-45deg);
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.bottNB-clck {
+    /*    -webkit-animation: Gradient-bottomNavi 0.5s 1 linear forwards;*/
+    /*    -moz-animation: Gradient-bottomNavi 0.5s 1 linear forwards;*/
+    animation: Gradient-bottomNavi 0.55s 1 linear forwards;
+}
+
+@keyframes Gradient-bottomNavi {
+    50% {
+        transform: translateY(-10px);
+    }
+    75% {
+        background-color: rgba(95, 245, 191, 1);
+        transform: rotate(45deg);
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.middNB-clck {
+    -webkit-animation: Gradient-middleNavi 0.25s 1 linear forwards;
+    -moz-animation: Gradient-middleNavi 0.25s 1 linear forwards;
+    animation: Gradient-middleNavi 0.25s 1 linear forwards;
+}
+
+@keyframes Gradient-middleNavi {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        background-color: rgba(95, 245, 191, 1);
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/*.divNaviBar,*/
+
+.allNB-clck {
+    -webkit-animation: Gradient-allomNavi 0.4s ease-in 1;
+    -moz-animation: Gradient-allomNavi 0.4s ease-in 1;
+    animation: Gradient-allomNavi 0.4s ease-in 1;
+}
+
+@keyframes Gradient-allomNavi {
+    0% {
+        transform: translateX(0px);
+    }
+    90% {
+        opacity: 0;
+        display: none;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.dissapearBars {
+    -webkit-animation: Gradient-dissapear all 0.9s;
+    -moz-animation: Gradient-dissapear all 0.9s;
+    animation: Gradient-dissapear all 0.9s;
+}
+
+@keyframes Gradient-dissapear {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
 
 /***************  Animation  ***************/
 
