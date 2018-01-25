@@ -6,7 +6,7 @@
     <title>Responsive Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- stylesheets -->
-<!--    <link rel="stylesheet" href="style/mobileStyle.css" type="text/css" />-->
+    <!--    <link rel="stylesheet" href="style/mobileStyle.css" type="text/css" />-->
     <link rel="stylesheet" href="style/mobileStyle.css" type="text/css" />
 
     <!-- **************    Icons library   **************-->
@@ -28,12 +28,30 @@
     <!-- Header-->
     <header>
 
+        <!--
         <div class="topnav" id="myTopnav">
             <a href="#home" class="active">Home</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
             <a href="about.html">About</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+-->
+        <div id="myNav" class="overlay">
+            <!--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="closebtn" id="navWrapid2">
+                <div id="closeMenu" class="divClose2">
+                    <span class="close bar1"></span>
+                    <span class="close bar2"></span>
+                </div>
+            </div>
+
         </div>
 
         <h1> <span class="span-light">Eric</span> Lucero <span class="subtlt-1"></span></h1>
@@ -45,6 +63,15 @@
         </p>
     </header>
     <br>
+
+    <div class="navWrap" id="navWrapid">
+        <div id="clickMenu" class="divNaviBar intro">
+            <span class="topNaviBar" id="topSpan"></span>
+            <span class="middleNaviBar" id="midSpan"></span>
+            <span class="bottomNaviBar" id="bottSpan"></span>
+        </div>
+    </div>
+
     <!--Experiencia-->
     <section class="center">
         <h1>Experiencia <i class="material-icons">assignment</i></h1>
@@ -278,5 +305,18 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/batmanNav.js"></script>
     <script src="js/topNav0.js"></script>
-       </body>
-        < /html>
+    <script src="js/naviBar.js"></script>
+    <!--
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+    </script>
+-->
+</body>
+< /html>
