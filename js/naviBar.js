@@ -7,8 +7,8 @@ function openNav() {
     document.getElementById("topSpan").classList.add('topNB-clck');
     document.getElementById("midSpan").classList.add('middNB-clck');
     document.getElementById("bottSpan").classList.add('bottNB-clck');
-    document.getElementById("bara1").classList.add('claseAnim1');
-    document.getElementById("bara2").classList.add('claseAnim2');
+    document.getElementById("bara1").classList.add('ab1');
+    document.getElementById("bara2").classList.add('ab2');
 }
 
 function closeNav() {
@@ -17,7 +17,7 @@ function closeNav() {
     document.getElementById("topSpan").classList.remove('topNB-clck');
     document.getElementById("midSpan").classList.remove('middNB-clck');
     document.getElementById("bottSpan").classList.remove('bottNB-clck');
-    document.getElementById("bara1").classList.remove('claseAnim1');
-    document.getElementById("bara2").classList.remove('claseAnim2');
+    document.getElementById("bara1").classList.remove('ab1');
+    document.getElementById("bara2").classList.remove('ab2');
 
 }

@@ -248,25 +248,20 @@ a:hover {
 
 .divClose2 {
     float: right;
-    width: 3em;
+    width: 2.5em;
 }
 
 .close {
-    height: 5px;
+    height: 7px;
     /*    margin: 6px 0px;*/
     display: block;
     opacity: 0;
 }
 
-.bar2 {
-    /*    background-color: yellow;*/
-    transform: translateY(-20px);
-}
-
-.clseAnim1 {
-        -webkit-animation: Gradient-topNavi 2s ease forwards;
-        -moz-animation: Gradient-topNavi 2s ease forwards;
-    animation: Gradient-bar1 2.5s ease-out forwards;
+.ab1 {
+        -webkit-animation: Gradient-topNavi 1s ease forwards;
+        -moz-animation: Gradient-topNavi 1s ease forwards;
+    animation: Gradient-bar1 1s ease-out forwards;
 }
 
 @keyframes Gradient-bar1 {
@@ -284,10 +279,10 @@ a:hover {
     }
 }
 
-.clseAnim2 {
-        -webkit-animation: Gradient-topNavi 2s ease forwards;
-        -moz-animation: Gradient-topNavi 2s ease forwards;
-    animation: Gradient-bar2 2s ease forwards;
+.ab2 {
+        -webkit-animation: Gradient-topNavi 0.5s ease forwards;
+        -moz-animation: Gradient-tclseAnimopNavi 0.5s ease forwards;
+    animation: Gradient-bar2 0.5s ease forwards;
 }
 
 @keyframes Gradient-bar2 {
