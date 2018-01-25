@@ -210,7 +210,7 @@ a:hover {
 
 .divNaviBar {
     float: right;
-    width: 8%;
+    width: 2em;
 }
 
 .divNaviBar:hover {
@@ -248,19 +248,14 @@ a:hover {
 
 .divClose2 {
     float: right;
-    width: 8%;
+    width: 3em;
 }
 
 .close {
-    height: 4px;
+    height: 5px;
     /*    margin: 6px 0px;*/
     display: block;
     opacity: 0;
-}
-
-.bar1 {
-    /*    background-color: red;*/
-    /*    transform: rotate(-45deg);*/
 }
 
 .bar2 {
@@ -268,10 +263,10 @@ a:hover {
     transform: translateY(-20px);
 }
 
-.bar1 {
-    /*    -webkit-animation: Gradient-topNavi 0.35s 1 linear forwards;*/
-    /*    -moz-animation: Gradient-topNavi 0.35s 1 linear forwards;*/
-    animation: Gradient-bar1 1.5s ease forwards;
+.clseAnim1 {
+        -webkit-animation: Gradient-topNavi 2s ease forwards;
+        -moz-animation: Gradient-topNavi 2s ease forwards;
+    animation: Gradient-bar1 2.5s ease-out forwards;
 }
 
 @keyframes Gradient-bar1 {
@@ -289,9 +284,9 @@ a:hover {
     }
 }
 
-.bar2 {
-    /*    -webkit-animation: Gradient-topNavi 0.35s 1 linear forwards;*/
-    /*    -moz-animation: Gradient-topNavi 0.35s 1 linear forwards;*/
+.clseAnim2 {
+        -webkit-animation: Gradient-topNavi 2s ease forwards;
+        -moz-animation: Gradient-topNavi 2s ease forwards;
     animation: Gradient-bar2 2s ease forwards;
 }
 
