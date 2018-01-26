@@ -8,7 +8,6 @@ window.addEventListener('load', function(){
     }, false)
  
     dimPara.addEventListener('touchmove', function(e){
-        var dist = parseInt(touchobj.clientX) - startx
         dimPara.style.backgroundColor = 'blue';
         e.preventDefault()
     }, false)

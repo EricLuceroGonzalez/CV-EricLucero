@@ -182,9 +182,10 @@ a:hover {
 }
 */
 
-    .overlay a {
-        font-size: 20px
-    }
+.overlay a {
+    font-size: 20px
+}
+
 /*
     .overlay .closebtn {
         font-size: 40px;
@@ -239,7 +240,7 @@ a:hover {
 }
 
 .closebtn {
-/*    display: block;*/
+    /*    display: block;*/
     position: absolute;
     width: 100%;
     top: 30px;
@@ -259,8 +260,8 @@ a:hover {
 }
 
 .ab1 {
-        -webkit-animation: Gradient-topNavi 0.6s ease forwards;
-        -moz-animation: Gradient-topNavi 0.6s ease forwards;
+    -webkit-animation: Gradient-topNavi 0.6s ease forwards;
+    -moz-animation: Gradient-topNavi 0.6s ease forwards;
     animation: Gradient-bar1 0.6s ease forwards;
 }
 
@@ -280,8 +281,8 @@ a:hover {
 }
 
 .ab2 {
-        -webkit-animation: Gradient-topNavi 0.5s ease forwards;
-        -moz-animation: Gradient-tclseAnimopNavi 0.5s ease forwards;
+    -webkit-animation: Gradient-topNavi 0.5s ease forwards;
+    -moz-animation: Gradient-tclseAnimopNavi 0.5s ease forwards;
     animation: Gradient-bar2 0.5s ease forwards;
 }
 
@@ -555,9 +556,9 @@ footer hr {
     padding: 12px;
     font-size: 50px;
     width: 42px;
+    border-radius: 50%;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
 }
 
 /* Add a hover effect if you want */
@@ -571,10 +572,29 @@ footer hr {
 /* Whatsapp */
 
 .fa-whatsapp {
-    background: green;
+    background: #25D366;
     color: white;
 }
 
+.fa-whatsapp.contact {
+    display: block;
+    color: white;
+    font-size: 4em;
+    width: 130px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.divContact {
+    background-color: #25D366;
+    padding: 50px;
+    width: 100%;
+}
+.divContact {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+}
 /* Facebook */
 
 .fa-facebook {
@@ -726,6 +746,7 @@ header {
 }
 
 /*************        **************        *****/
+
 #hdrSpn {
     -webkit-animation: Gradient-para 15s ease-in-out infinite;
     -moz-animation: Gradient-para 15s ease-in-out infinite;
@@ -943,7 +964,6 @@ header {
 
 #dimensions {
     background-color: rgba(255, 159, 10, 1);
-    /*    box-shadow: 6px 7px 10px gray;*/
     padding: 2px;
     text-align: center;
     font-size: 0.55em;
@@ -978,4 +998,37 @@ header {
 
 #Llave {
     font-size: 1.5em;
+}
+
+.Icon {
+    -webkit-animation: Gradient-anavIcon 2.5s ease-in-out infinite;
+    -moz-animation: Gradient-anavIcon 2.5s ease-in-out infinite;
+    animation: Gradient-anavIcon 2.5s ease-in-out infinite;
+}
+
+@keyframes Gradient-anavIcon {
+    0% {
+        /*        transform: translateY(2px);*/
+    }
+    20% {
+        transform: translateX(-2px);
+        transform: translateY(-1px);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    40% {
+        transform: translateY(1px);
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: translateX(-5px);
+        transform: rotate(-10deg);
+    }
+    80% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(-1px);
+    }
 }
