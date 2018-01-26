@@ -27,10 +27,12 @@
 <body class="w3-light-grey">
     <!-- Header-->
     <header>
+<!--
 
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
+                <a href="index.html">Home</a>
                 <a href="#">About</a>
                 <a href="#">Services</a>
                 <a href="#">Clients</a>
@@ -39,6 +41,30 @@
         </div>
 
 <span class="openNav" onclick="openNav()">&#9776;</span>
+-->
+               
+    <div class="navWrap" id="navWrapid">
+        <div id="clickMenu" class="divNaviBar intro">
+            <span class="topNaviBar" id="topSpan"></span>
+            <span class="middleNaviBar" id="midSpan"></span>
+            <span class="bottomNaviBar" id="bottSpan"></span>
+        </div>
+    </div>
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+               <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="closebtn" id="navWrapid2">
+                <div id="closeMenu" class="divClose2">
+                    <span id="bara1" class="close bar1 ab1"></span>
+                    <span id="bara2" class="close bar2 ab2"></span>
+                </div>
+            </div>
+        </div>
 
         <h1> <span class="span-light"></span> About <span class="subtlt-1"></span></h1>
     </header>
@@ -273,18 +299,7 @@
     <script src="js/showViewportSize.js"></script>
     <script src="js/touch-event0.js"></script>
     <script src="js/topNav0.js"></script>
-    <!--    <script src="js/downloadFile.js"></script>-->
-    <!--    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
-    <!--    <script src="js/batmanNav.js"></script>-->
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-    </script>
+    <script src="js/naviBar.js"></script>
 </body>
 
 </html>
