@@ -177,14 +177,6 @@ a:hover {
     font-size: 20px
 }
 
-/*
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-*/
-
 .openNav {
     position: fixed;
     right: 2px;
@@ -567,25 +559,51 @@ footer hr {
     color: white;
 }
 
+/*  ***********  contact - Whatsapp */
 .fa-whatsapp.contact {
     display: block;
     color: white;
-    font-size: 4em;
-    width: 130px;
+    font-size: 2em;
+    width: 60px;
     margin: auto;
     border-radius: 50%;
+    /* background-color: #25D366; */
 }
-
 .divContact {
     background-color: #25D366;
-    padding: 50px;
-    width: 100%;
-}
-.divContact {
-    font-size: 2em;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    padding: 30px;
+    font-size: 1.2em;
     color: white;
     text-shadow: 2px 2px 2px gray;
 }
+/*  ***********  contact - Whatsapp */
+.divContact-git{
+  border: 2px solid black;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  padding: 40px;
+  font-size: 1.2em;
+}
+.fa-github.contact{
+  font-size: 2.5em;
+  color: black;
+  margin: 4px -5px;
+  width: 75px;
+}
+/*  ***********  contact - Github */
+.divContact-test{
+  border: 2px solid #25D366;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  padding: 40px;
+  font-size: 1.2em;
+}
+
 /* Facebook */
 
 .fa-facebook {
@@ -621,7 +639,7 @@ footer hr {
         margin-top: 1em;
     }
     #dimensions {
-        background-color: rgba(255, 0, 50, 0.4);
+      background-color: rgba(255, 0, 50, 0.4);
     }
 }
 
@@ -955,12 +973,12 @@ header {
 
 #dimensions {
     background-color: rgba(255, 159, 10, 1);
-    padding: 2px;
+    padding: 5px;
     text-align: center;
-    font-size: 0.55em;
+    font-size: 1.5em;
     position: fixed;
     bottom: 0.5px;
-    left: 47%;
+    left: 42%;
 }
 
 #underConstr {
