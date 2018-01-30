@@ -6,6 +6,7 @@
     <title>Responsive Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- stylesheets -->
+    <script defer src="js/fontawesome-all.js"></script>
     <link rel="stylesheet" href="style/mobileStyle.css" type="text/css" />
     <!--    <link rel="stylesheet" href="style/topNav.css" type="text/css" />-->
     <!--  <link rel="stylesheet" href="sideNavBar.css" type="text/css" />-->
@@ -27,7 +28,6 @@
 <body class="w3-light-grey">
     <!-- Header-->
     <header>
-
         <div class="navWrap" id="navWrapid">
             <div id="clickMenu" class="divNaviBar intro">
                 <span class="topNaviBar" id="topSpan"></span>
@@ -35,6 +35,7 @@
                 <span class="bottomNaviBar" id="bottSpan"></span>
             </div>
         </div>
+
         <div id="myNav" class="overlay">
             <div class="overlay-content">
                 <a href="index.html">Home</a>
@@ -56,36 +57,34 @@
     <br>
     <!--Experiencia-->
     <section class="center">
-        <a href="index.html">
-          <div class="divContact">
-              <a href="https://api.whatsapp.com/api/send?phone=50769825076" target="_blank" class="fa fa-whatsapp contact"></a>
-              WhatsApp
-              <div style="font-size:0.5em">Dont hesitate</div>
-          </div>
-        </a>
-
-        <a href="index.html">
-          <div class="divContact-git" style="margin-top:1em">
-              <a href="https://api.whatsapp.com/api/send?phone=50769825076" target="_blank" class="fa fa-github contact"></a>
+<!-- <div style="background-color:red"> -->
+      <div class="divContact" onclick="location.href='http://www.example.com';">
+          <!-- <a href="" target="_blank" class="fab fa-whatsapp contact"></a> -->
+          <i class="fab fa-whatsapp"></i>
+          WhatsApp
+          <div style="font-size:0.5em">Dont hesitate</div>
+      </div>
+  <!-- </div> -->
+          <div class="divContact-git" style="position:relative" href="https://api.whatsapp.com/api/send?phone=50769825076">
+              <a target="_blank" class="fab fa-github contact"></a>
               Github
           </div>
-        </a>
 
         <a href="index.html" >
           <div class="divContact-test" style="margin-top:1em">
-              <a href="https://api.whatsapp.com/api/send?phone=50769825076" target="_blank" class="fa fa-github"></a>
+              <a href="https://api.whatsapp.com/api/send?phone=50769825076" target="_blank" class="fab fa-github"></a>
               WhatsApp
           </div>
         </a>
         <a href="index.html" >
           <div class="divContact-test" style="margin-top:1em">
-              <a href="https://api.whatsapp.com/api/send?phone=50769825076" target="_blank" class="fa fa-github"></a>
+              <a href="https://api.whatsapp.com/api/send?phone=50769825076" target="_blank" class="fab fa-github"></a>
               WhatsApp
           </div>
-        </a>        
+        </a>
     </section>
 
-    <div class="divDescarga"><a href="media/00-CV-EricLucero-2018.pdf" download>Descargar PDF<i class="fa fa-file-pdf-o"></i></a></div>
+    <div class="divDescarga"><a href="media/00-CV-EricLucero-2018.pdf" download>Descargar PDF<i class="fas fa-file-pdf"></i></a></div>
     <p id="dimensions"></p>
     <div id="underConstr">
         <p><i class="material-icons" id="Llave">build</i> Sitio en desarrollo</p>
@@ -96,9 +95,9 @@
             <!-- Add font awesome icons -->
             <a href="https://api.whatsapp.com/api/send?phone=50769825076" target="_blank" class="fa fa-whatsapp"></a>
             <a class="fa fa-google" target="_blank"></a>
-            <a href="https://www.facebook.com/EricLucero20" class="fa fa-facebook" target="_blank"></a>
-            <a https://mobile.twitter.com/EricLuceroG class="fa fa-twitter" target="_blank"></a>
-            <a href="https://www.instagram.com/ericlucero20/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.facebook.com/EricLucero20" class="fab fa-facebook" target="_blank"></a>
+            <a https://mobile.twitter.com/EricLuceroG class="fab fa-twitter" target="_blank"></a>
+            <a href="https://www.instagram.com/ericlucero20/" class="fab fa-instagram" target="_blank"></a>
         </div>
         <hr>
         <span>&copy; Eric Lucero Gonzalez, 2018</span>
