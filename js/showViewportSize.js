@@ -5,5 +5,6 @@ function displayWindowSize() {
     // your size calculation code here
     var myWidth = window.innerWidth;
     var myHeight = window.innerHeight;
-    document.getElementById("dimensions").innerHTML = myWidth + "x" + myHeight;
+    // document.getElementById("dimensions").innerHTML = myWidth + "x" + myHeight;
+    document.getElementById("dimensions").textContent = myWidth + "x" + myHeight;
 };
