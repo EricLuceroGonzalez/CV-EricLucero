@@ -1,3 +1,38 @@
+window.onresize = displayWindowSize();
+
+window.onload = function() {
+  displayWindowSize();
+  changePosition();
+  var elements = document.getElementsByClassName('typewrite');
+  for (var i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-type');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtType(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+};
+
+function displayWindowSize() {
+  // your size calculation code here
+  var myWidth = window.innerWidth;
+  var myHeight = window.innerHeight;
+
+  document.getElementById("dimensions").textContent = myWidth + "x" + myHeight;
+};
+
+function changePosition() {
+
+  var writer = document.getElementsByClassName('typewrite');
+  for (var i = 0; i < writer.length; i++) {
+    var randiTop = Math.random() * (window.innerHeight);
+    var randiLeft = Math.random() * (window.innerWidth - 60);
+    writer[i].style.top = randiTop.toString() + 'px';
+    writer[i].style.left = randiLeft.toString() + 'px';
+  }
+}
+
+
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -45,7 +80,7 @@ TxtType.prototype.tick = function() {
   }, delta);
 
   function changePosition() {
-    var randiTop = Math.random() * 210;
+    var randiTop = Math.random() * (window.innerHeight);
     var randiLeft = Math.random() * (window.innerWidth - 60);
     var writer = document.getElementById('typewrt');
     writer.style.top = randiTop.toString() + 'px';
@@ -53,35 +88,3 @@ TxtType.prototype.tick = function() {
   }
 
 };
-
-window.onresize = displayWindowSize();
-
-window.onload = function() {
-  displayWindowSize();
-  changePosition();
-  var elements = document.getElementsByClassName('typewrite');
-  for (var i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-type');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtType(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-};
-
-function displayWindowSize() {
-  // your size calculation code here
-  var myWidth = window.innerWidth;
-  var myHeight = window.innerHeight;
-
-  document.getElementById("dimensions").textContent = myWidth + "x" + myHeight;
-};
-
-
-function changePosition() {
-  var randiTop = Math.random() * 210;
-  var randiLeft = Math.random() * (window.innerWidth - 60);
-  var writer = document.getElementById('typewrt');
-  writer.style.top = randiTop.toString() + 'px';
-  writer.style.left = randiLeft.toString() + 'px';
-}

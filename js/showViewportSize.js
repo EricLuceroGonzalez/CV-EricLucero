@@ -1,10 +1,15 @@
-window.onresize = displayWindowSize;
-window.onload = displayWindowSize;
-
-function displayWindowSize() {
-    // your size calculation code here
-    var myWidth = window.innerWidth;
-    var myHeight = window.innerHeight;
-    // document.getElementById("dimensions").innerHTML = myWidth + "x" + myHeight;
-    document.getElementById("dimensions").textContent = myWidth + "x" + myHeight;
+window.onscroll = function() {
+  scrollSurprise()
 };
+
+function scrollSurprise() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    document.getElementById('divDesc').classList.remove("floatDIV");
+    document.getElementById('dimensions').classList.remove("floatDIV");
+    document.getElementById('underConstr').classList.remove("floatDIV");
+  } else {
+    document.getElementById('divDesc').classList.add("floatDIV");
+    document.getElementById('dimensions').classList.add("floatDIV");
+    document.getElementById('underConstr').classList.add("floatDIV");
+  }
+}

@@ -638,56 +638,63 @@ footer hr {
 /***************  Animation  ***************/
 
 header {
-  width: 100wh;
+  /* width: 100wh; */
   /*	height: 90vh;*/
   color: #fff;
   /*    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
-  background: linear-gradient(-20deg, rgba(238, 119, 82, 1), rgba(231, 60, 126, 1), rgba(35, 166, 213, 1), rgba(35, 213, 171, 1));
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 2s ease infinite;
+  /* background: linear-gradient(-20deg, rgba(238, 119, 82, 1), rgba(231, 60, 126, 1), rgba(35, 166, 213, 1), rgba(35, 213, 171, 1)); */
+  /* background: linear-gradient(-20deg, rgba(238, 119, 82, 1), rgba(231, 60, 126, 0.75), rgba(35, 166, 213, 1), rgba(35, 213, 171, 1)); */
+  /* background: linear-gradient(-54deg, rgba(0, 20, 20  0, 1), rgba(155, 155, 155, 0.75), rgba(35, 166, 213, 1), rgba(35, 213, 171, 1)); */
+  /* background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); */
+  background: #333333;  /* fallback for old browsers */
+background-image: -webkit-linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+background-size: 100% 400%;
+-webkit-animation: Gradient 5s ease infinite;
+-moz-animation: Gradient 5s ease infinite;
+animation: Gradient 5s ease infinite;
 }
 
-/* @-webkit-keyframes Gradient {
+@-webkit-keyframes Gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
   50% {
-    background-position: 100% 250%
+    background-position: 50% 250%
   }
   100% {
-    background-position: 0% 50%
+    background-position: 50% -50%
   }
 }
 
 @-moz-keyframes Gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
   50% {
-    background-position: 100% 50%
+    background-position: 50% 250%
   }
   100% {
-    background-position: 0% 50%
+    background-position: 50% -50%
   }
-} */
+}
 
 @keyframes Gradient {
   0% {
-    background-position: 0% 10%;
+    background-position: 50% 0%;
   }
   50% {
-    background-position: 100% 50%
+    background-position: 50% 250%
   }
   100% {
-    background-position: 0% 50%
+    background-position: 50% -50%;
+
   }
 }
 
 /*************        **************        *****/
 
-#myNav {
+#myNav{
   /*    width: 100wh;*/
   /*	height: 90vh;*/
   color: #fff;
@@ -714,6 +721,7 @@ header {
 
 @-moz-keyframes GradientNavi {
   0% {
+    opacity: 0;
     background-position: 0% 50%;
   }
   50% {
@@ -726,6 +734,7 @@ header {
 
 @keyframes GradientNavi {
   0% {
+    opacity: 0;
     background-position: 0% 50%;
   }
   50% {
@@ -929,6 +938,17 @@ header {
 
 /***************  Animation  ***************/
 
+.typewrite,
+.typewrite2 {
+  position: absolute;
+  font-size: 0.75em;
+  z-index: 0;
+  color: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  left: 0px;
+}
+
+/************************  Float divs  ************************/
 .divDescarga {
   font-weight: bold;
   font-size: 0.65em;
@@ -946,15 +966,6 @@ header {
 
 .divDescarga:hover {
   background-color: rgba(250, 0, 0, 0.8);
-}
-
-.typewrite {
-  position: absolute;
-  font-size: 0.75em;
-  z-index: 0;
-  color: rgba(0, 0, 0, 0.2);
-  top: 0px;
-  left: 0px;
 }
 
 #testing {
@@ -1005,6 +1016,10 @@ header {
   font-family: 'Catamaran', sans-serif;
   background-color: rgba(0, 0, 0, 0.65);
 }
+.floatDIV{
+  opacity: 0;
+}
+/************************  Float divs  ************************/
 
 #Llave {
   font-size: 1.5em;
