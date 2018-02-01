@@ -4,12 +4,19 @@
   box-sizing: border-box;
 }
 
+html {
+  /* For parallax: */
+  height: 100%;
+}
+
 body {
   /*    font: 100% sans-serif;*/
   font: 1em sans-serif;
   margin: 0em;
   background-color: #fff;
   color: #666;
+  /* For parallax: */
+  height: 100%;
 }
 
 h1, h2, h3 {
@@ -287,9 +294,10 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-bottom: 4em;
+  /* margin-bottom: 4em; */
   text-align: center;
-  height: 240px;
+  /* height: 240px; */
+  height: 100%;
   z-index: 0;
 }
 
@@ -532,6 +540,7 @@ footer hr {
 /* Set a specific color for each brand */
 
 /*  ***********  contact - Whatsapp */
+
 .footer {
   color: white;
   padding: 4px;
@@ -577,6 +586,7 @@ footer hr {
 }
 
 /*  ***********  contact - Github */
+
 /* Whatsapp */
 
 .fa-whatsapp {
@@ -632,19 +642,19 @@ header {
   /*	height: 90vh;*/
   color: #fff;
   /*    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
-  background: linear-gradient(-45deg, rgba(238, 119, 82, 1), rgba(231, 60, 126, 1), rgba(35, 166, 213, 1), rgba(35, 213, 171, 1));
+  background: linear-gradient(-20deg, rgba(238, 119, 82, 1), rgba(231, 60, 126, 1), rgba(35, 166, 213, 1), rgba(35, 213, 171, 1));
   background-size: 400% 400%;
-  -webkit-animation: Gradient 30s ease infinite;
-  -moz-animation: Gradient 30s ease infinite;
-  animation: Gradient 30s ease infinite;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 2s ease infinite;
 }
 
-@-webkit-keyframes Gradient {
+/* @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%
+    background-position: 100% 250%
   }
   100% {
     background-position: 0% 50%
@@ -661,11 +671,11 @@ header {
   100% {
     background-position: 0% 50%
   }
-}
+} */
 
 @keyframes Gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 10%;
   }
   50% {
     background-position: 100% 50%
@@ -1050,4 +1060,16 @@ header {
   100% {
     transform: translate(0px, 0px);
   }
+}
+
+.parallax {
+  /* The image used */
+  /* background-image: url("img_parallax.jpg"); */
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
