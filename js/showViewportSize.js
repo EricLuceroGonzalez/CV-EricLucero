@@ -4,23 +4,23 @@ window.onscroll = function() {
 
 function scrollSurprise() {
   if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-    document.getElementById('divDesc').style.opacity = "1";
+    document.getElementById('divChatMe').style.opacity = "1";
     document.getElementById('dimensions').style.opacity = "1";
     document.getElementById('underConstr').style.opacity = "1";
-    document.getElementById('divDesc').classList.add("floatDivShow");
+    document.getElementById('divChatMe').classList.add("floatDivShow");
     document.getElementById('dimensions').classList.add("floatDivShow");
     document.getElementById('underConstr').classList.add("floatDivShow");
-    document.getElementById('divDesc').classList.remove("floatDiv-Hide");
+    document.getElementById('divChatMe').classList.remove("floatDiv-Hide");
     document.getElementById('dimensions').classList.remove("floatDiv-Hide");
     document.getElementById('underConstr').classList.remove("floatDiv-Hide");
   } else {
-    document.getElementById('divDesc').classList.remove("floatDivShow");
+    document.getElementById('divChatMe').classList.remove("floatDivShow");
     document.getElementById('dimensions').classList.remove("floatDivShow");
     document.getElementById('underConstr').classList.remove("floatDivShow");
-    document.getElementById('divDesc').classList.add("floatDiv-Hide");
+    document.getElementById('divChatMe').classList.add("floatDiv-Hide");
     document.getElementById('dimensions').classList.add("floatDiv-Hide");
     document.getElementById('underConstr').classList.add("floatDiv-Hide");
-    // document.getElementById('divDesc').style.opacity = "0";
+    // document.getElementById('divChatMe').style.opacity = "0";
     // document.getElementById('dimensions').style.opacity = "0";
     // document.getElementById('underConstr').style.opacity = "0";
   }
