@@ -27,17 +27,13 @@
 
 <body class="w3-light-grey">
   <!-- Header-->
-  <header class="parallax">
-
-    <!--
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="about.html">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
--->
+  <!-- <p>
+          <span class="span-1" id="hdrSpn">Fisica | </span>
+          <span class="span-2" id="hdrSpn">Matematica | </span>
+          <span class="span-3" id="hdrSpn">Docencia | </span>
+          <span class="span-4" id="hdrSpn">Computacion </span>
+      </p> -->
+  <!-- <header class="parallax">
 
     <div class="navWrap" id="navWrapid">
       <div id="clickMenu" class="divNaviBar intro">
@@ -63,12 +59,6 @@
     </div>
 
     <h1> <span class="span-light parallax">Eric</span> Lucero <span class="subtlt-1"></span></h1>
-    <!-- <p>
-            <span class="span-1" id="hdrSpn">Fisica | </span>
-            <span class="span-2" id="hdrSpn">Matematica | </span>
-            <span class="span-3" id="hdrSpn">Docencia | </span>
-            <span class="span-4" id="hdrSpn">Computacion </span>
-        </p> -->
 
     <h2>
           <a id="typewrt" class="typewrite" data-period="1000"
@@ -92,7 +82,7 @@
             </h2>
 
     <i id="downArrow" class="fas fa-arrow-circle-down arrow-Down"></i>
-  </header>
+  </header> -->
   <br>
   <section class="Features-section">
     <i class="fab fa-js"></i>
@@ -100,6 +90,63 @@
     <i class="fab fa-css3-alt"></i>
     <i class="fab fa-android"></i>
   </section>
+
+  <!--**************************** Div-Guia ****************************-->
+  <div class="div-Guia">
+    <svg width="100%" height="100px" version="1.1">
+     <line x1="0" y1="50%" x2="100%" y2="50%" stroke="red" stroke-width="3"/>
+     <line x1="50%" y1="0" x2="50%" y2="100%" stroke="red" stroke-width="1"/>
+   </svg>
+  </div>
+  <!--**************************** Div-Guia ****************************-->
+
+  <div class="div-svg0">
+    <svg width="250" height="150" version="1.1">
+  <title>Example filters01.svg - introducing filter effects</title>
+  <desc>An example which combines multiple filter primitives
+        to produce a 3D lighting effect on a graphic consisting
+        of the string "SVG" sitting on top of oval filled in red
+        and surrounded by an oval outlined in red.</desc>
+  <defs>
+    <filter id="MyFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feOffset in="blur" dx="2" dy="8" result="offsetBlur"/>
+        <fePointLight x="-5000" y="-10000" z="20000"/>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic"
+                   k1="0" k2="1" k3="1" k4="0" result="litPaint"/>
+      <feMerge>
+        <feMergeNode in="offsetBlur"/>
+        <feMergeNode in="litPaint"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#MyFilter)" >
+	  <g>
+      <polyline points="75 25 0 75 75 125"
+                  stroke="#00c6fb" fill="transparent" stroke-width="5"/>
+      <polyline points="125 0 90 150"
+                  stroke="#00c6fb" fill="transparent" stroke-width="5"/>
+      <polyline points="150 25 225 75 150 125"
+                  stroke="#00c6fb" fill="transparent" stroke-width="5" id="svg-poly1"/>
+    </g>
+  </g>
+</svg>
+    <h1 class="skills code">Codigo</h1>
+    <p class="code">Codigo Codigo Codigo Codigo</p>
+  </div>
+  <div class="div-svg1">
+    <svg class="svg2" width="200" height="250" version="1.1">
+      <polyline points="0 200 100 200 100 50 0 50 0 205"
+                  stroke="rgba(160,0,240,1.0)" fill="transparent" stroke-width="10" id="svg-frame1"/>
+      <polyline points="25 175 125 175 125 25 25 25 25 180"
+                  stroke="rgba(160,0,240,0.65)" fill="transparent" stroke-width="10" id="svg-frame2"/>
+      <polyline points="50 150 150 150 150 0 50 0 50 155"
+                  stroke="rgba(160,0,240,0.4)" fill="transparent" stroke-width="10" id="svg-frame3"/>
+</svg>
+    <h1 class="skills code">A frame for everyone</h1>
+    <p class="code">Codigo Codigo Codigo Codigo</p>
+  </div>
 
   <!--Experiencia-->
   <section class="center">
@@ -327,9 +374,9 @@
       <a href="https://api.whatsapp.com/api/send?phone=50769825076" target="_blank" class="fab fa-whatsapp footer"></a>
       <a class="fab fa-google footer" target="_blank"></a>
       <a href="https://www.instagram.com/ericlucero20/" class="fab fa-instagram footer" target="_blank"></a>
-      <a href="https://www.instagram.com/ericlucero20/" class="fab fa-github footer" target="_blank"></a>
+      <a href="https://github.com/EricLuceroGonzalez" class="fab fa-github footer" target="_blank"></a>
       <a href="https://mobile.twitter.com/EricLuceroG" class="fab fa-twitter footer" target="_blank"></a>
-      <a href="https://www.facebook.com/EricLucero20" class="fab fa-facebook footer" target="_blank"></a>      
+      <a href="https://www.facebook.com/EricLucero20" class="fab fa-facebook footer" target="_blank"></a>
     </div>
     <hr>
     <span>    <i class="far fa-registered"></i> Eric Lucero Gonzalez, 2018</span>

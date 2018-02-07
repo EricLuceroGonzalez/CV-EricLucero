@@ -1170,3 +1170,61 @@ header {
 .Features-section {
   font-size: 3em;
 }
+
+.div-svg0{
+  width: 40%;
+  margin: 0 auto;
+  padding: 10px;
+  transform: scale(0.5);
+  /* background: yellow; */
+  text-align: center;
+}
+.div-svg1{
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background: yellow;
+  text-align: center;
+}
+.svg2{
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.skills {
+font-size: 4em;
+color: blue;
+}
+
+#svg-poly1{
+    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+    -webkit-filter: drop-shadow( -5px -5px 5px #000 );
+            filter: drop-shadow( -5px -5px 5px #000 );
+}
+
+.div-Guia{
+  background: rgba(100,10,100,0.1);
+}
+#svg-frame2,
+#svg-frame3{
+  transform: translateX(150px);
+  transform: translateY(25px);
+}
+#svg-frame2{
+  animation: move-Frame linear 0.75s forwards;
+}
+#svg-frame3{
+  animation: move-Frame linear 0.5s forwards;
+}
+
+@keyframes move-Frame {
+  0%{
+    opacity: 0.5;
+  }
+  50%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(20px);
+  }
+}
