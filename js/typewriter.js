@@ -1,3 +1,5 @@
+// window.onresize = displayWindowSize();
+window.onresize = displayWindowSize;
 window.onload = function() {
   displayWindowSize();
   changePosition();
@@ -10,7 +12,8 @@ window.onload = function() {
     }
   }
 };
-window.onresize = displayWindowSize();
+
+// window.addEventListener("resize", displayWindowSize);
 
 function displayWindowSize() {
   // your size calculation code here
