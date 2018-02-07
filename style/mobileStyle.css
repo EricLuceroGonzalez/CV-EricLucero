@@ -1182,24 +1182,16 @@ header {
 .div-svg1{
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
   background: yellow;
-  text-align: center;
 }
 .svg2{
+  /* background: cyan; */
   margin: 0 auto;
-  padding: 12px;
 }
 
 .skills {
 font-size: 4em;
 color: blue;
-}
-
-#svg-poly1{
-    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
-    -webkit-filter: drop-shadow( -5px -5px 5px #000 );
-            filter: drop-shadow( -5px -5px 5px #000 );
 }
 
 .div-Guia{
