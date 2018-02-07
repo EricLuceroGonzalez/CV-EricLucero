@@ -1207,10 +1207,10 @@ color: blue;
 }
 
 .svg-frame2{
-  animation: move-Frame1 linear 1s forwards;
+  animation: move-Frame1 linear 2s forwards;
 }
 .svg-frame3{
-  animation: move-Frame2 linear 1s forwards;
+  animation: move-Frame2 linear 2s forwards;
 }
 
 @keyframes move-Frame1 {
