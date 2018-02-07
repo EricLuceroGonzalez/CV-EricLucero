@@ -1205,26 +1205,33 @@ color: blue;
 .div-Guia{
   background: rgba(100,10,100,0.1);
 }
-#svg-frame2,
-#svg-frame3{
-  transform: translateX(150px);
-  transform: translateY(25px);
+
+.svg-frame2{
+  animation: move-Frame1 linear 1s forwards;
 }
-#svg-frame2{
-  animation: move-Frame linear 0.75s forwards;
-}
-#svg-frame3{
-  animation: move-Frame linear 0.5s forwards;
+.svg-frame3{
+  animation: move-Frame2 linear 1s forwards;
 }
 
-@keyframes move-Frame {
+@keyframes move-Frame1 {
+  0%{
+    opacity: 0.75;
+  }
+  50%{
+    transform: translate(30px,-25px);
+  }
+  100%{
+    transform: translate(30px,-25px);
+  }
+}
+@keyframes move-Frame2 {
   0%{
     opacity: 0.5;
   }
   50%{
-    transform: translateX(10px);
+    transform: translate(55px,-55px);
   }
   100%{
-    transform: translateX(20px);
+    transform: translate(55px,-55px);
   }
 }
