@@ -102,36 +102,21 @@
 
   <div class="div-svg0">
     <svg width="250" height="150" version="1.1">
-  <title>Example filters01.svg - introducing filter effects</title>
-  <desc>An example which combines multiple filter primitives
-        to produce a 3D lighting effect on a graphic consisting
-        of the string "SVG" sitting on top of oval filled in red
-        and surrounded by an oval outlined in red.</desc>
-  <defs>
-    <filter id="MyFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
-      <feOffset in="blur" dx="2" dy="8" result="offsetBlur"/>
-        <fePointLight x="-5000" y="-10000" z="20000"/>
-      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
-      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic"
-                   k1="0" k2="1" k3="1" k4="0" result="litPaint"/>
-      <feMerge>
-        <feMergeNode in="offsetBlur"/>
-        <feMergeNode in="litPaint"/>
-      </feMerge>
-    </filter>
-  </defs>
-  <g filter="url(#MyFilter)" >
-	  <g>
-      <polyline points="75 25 0 75 75 125"
-                  stroke="red" fill="transparent" stroke-width="5"/>
-      <polyline points="125 0 90 150"
-                  stroke="red" fill="transparent" stroke-width="5"/>
-      <polyline points="150 25 225 75 150 125"
-                  stroke="red" fill="transparent" stroke-width="5" id="svg-poly1"/>
-    </g>
-  </g>
+ <defs>
+   <filter id="f3" x="0" y="0" width="200%" height="200%">
+     <feOffset result="offOut" in="SourceAlpha" dx="5" dy="10" />
+     <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4" />
+     <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+   </filter>
+ </defs>
+ <polyline points="75 25 0 75 75 125"
+             stroke="red" fill="transparent" stroke-width="5"filter="url(#f3)" />
+ <polyline points="125 0 90 150"
+             stroke="red" fill="transparent" stroke-width="5" filter="url(#f3)" />
+ <polyline points="150 25 225 75 150 125"
+             stroke="red" fill="transparent" stroke-width="5" filter="url(#f3)" />
 </svg>
+
     <h1 class="skills code">Codigo</h1>
     <p class="code">Codigo Codigo Codigo Codigo</p>
   </div>
