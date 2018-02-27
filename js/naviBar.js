@@ -9,6 +9,7 @@ function openNav() {
     document.getElementById("bottSpan").classList.add('bottNB-clck');
     document.getElementById("bara1").classList.add('ab1');
     document.getElementById("bara2").classList.add('ab2');
+    document.getElementById("closeMenu").classList.add('closeCircle');
 }
 
 function closeNav() {
@@ -19,5 +20,5 @@ function closeNav() {
     document.getElementById("bottSpan").classList.remove('bottNB-clck');
     document.getElementById("bara1").classList.remove('ab1');
     document.getElementById("bara2").classList.remove('ab2');
-
+    document.getElementById("closeMenu").classList.remove('closeCircle');    
 }
