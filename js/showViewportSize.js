@@ -1,11 +1,33 @@
 window.onscroll = function() {
-  scrollSurprise()
+  scrollSurprise();
 };
 
 function scrollSurprise() {
-  var a = document.body.scrollTop;
-  var b= document.documentElement.scrollTop;
-  if (a > 550 ||  b > 550) {
+  var topDistance = document.body.scrollTop || (document.documentElement && document.documentElement.scrollTop);
+  var gridItem1 = document.querySelectorAll(".grid-item-row1");
+  var gridItem2 = document.querySelectorAll(".grid-item-row2");
+  var gridItem3 = document.querySelectorAll(".grid-item-row3");
+  var show1 = 240;
+  var show2 = 350;
+  var show3 = 450;
+  var showEnd = 500;
+  if ((topDistance >= show1) && (topDistance < show2)) {
+    // console.log("Scrolled = " + topDistance);
+    for (var i = 0; i < gridItem1.length; i++) {
+      gridItem1[i].classList.add("gridAnimate");
+    }
+  } else if ((topDistance >= show2) && (topDistance < show3)) {
+    // console.log("\t Scrolled 2 = " + topDistance);
+    for (var i = 0; i < gridItem2.length; i++) {
+      gridItem2[i].classList.add("gridAnimate");
+    }
+  } else if ((topDistance >= show3) && (topDistance < showEnd)) {
+    // console.log("\t\t Scrolled 3 = " + topDistance);
+    for (var i = 0; i < gridItem3.length; i++) {
+      gridItem3[i].classList.add("gridAnimate");
+    }
+  } else if ((topDistance >= 420) && (topDistance < 1500)) {
+    // console.log("\t\t\t Scrolled 2 = " + topDistance);
     document.getElementById('divChatMe').style.opacity = "1";
     document.getElementById('dimensions').style.opacity = "1";
     document.getElementById('underConstr').style.opacity = "1";
@@ -15,6 +37,7 @@ function scrollSurprise() {
     document.getElementById('divChatMe').classList.remove("floatDiv-Hide");
     document.getElementById('dimensions').classList.remove("floatDiv-Hide");
     document.getElementById('underConstr').classList.remove("floatDiv-Hide");
+  } else if (topDistance >= 1500) {
     document.getElementById('svg-IDframe2').classList.add("svg-frame2");
     document.getElementById('svg-IDframe3').classList.add("svg-frame3");
   } else {
@@ -26,6 +49,10 @@ function scrollSurprise() {
     document.getElementById('underConstr').classList.add("floatDiv-Hide");
     document.getElementById('svg-IDframe2').classList.remove("svg-frame2");
     document.getElementById('svg-IDframe3').classList.remove("svg-frame3");
+    var allGridItem = document.querySelectorAll(".grid-item");
+    for (var i = 0; i < allGridItem.length; i++) {
+      allGridItem[i].classList.remove("gridAnimate");
+    }
   }
   // if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
   //   document.getElementById('downArrow').classList.add("floatDiv-Hide");

@@ -242,8 +242,10 @@ a:focus, a:hover {
 
 /* .ab1 {
   /* -webkit-animation: Gradient-topNavi 0.6s ease forwards; */
-  /* -moz-animation: Gradient-topNavi 0.6s ease forwards; */
-  /* animation: Gradient-bar1 0.95s ease-out forwards;
+
+/* -moz-animation: Gradient-topNavi 0.6s ease forwards; */
+
+/* animation: Gradient-bar1 0.95s ease-out forwards;
 }
 
 @keyframes Gradient-bar1 {
@@ -262,62 +264,63 @@ a:focus, a:hover {
   }
 } */
 
-.Circle,
-.ab1,
-.ab2 {
+.Circle, .ab1, .ab2 {
   /* -webkit-animation: Gradient-topNavi 0.5s ease infinite; */
   /* -moz-animation: Gradient-tclseAnimopNavi 0.5s ease infinite; */
   animation: Gradient-bar2 0.75s ease-out forwards;
 }
 
- @keyframes Gradient-bar2 {
+@keyframes Gradient-bar2 {
   0% {
     opacity: 0;
   }
   25% {
     opacity: 0.25;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-.closeCircle{
+
+.closeCircle {
   animation: divClose-rotate 1.1s ease-in-out forwards;
 }
+
 @keyframes divClose-rotate {
-  0%{
+  0% {
     opacity: 0;
   }
-  25%{
+  25% {
     opacity: 0.25;
   }
-  50%{
+  50% {
     opacity: 0.5;
   }
-  60%{
+  60% {
     transform: rotate(20deg);
   }
-  80%{
+  80% {
     transform: rotate(30deg);
   }
-  90%{
+  90% {
     transform: rotate(120deg);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: rotate(-90deg);
   }
-
 }
 
 /*********************  Nav Bar2  *********************/
-.header-photo{
+
+.header-photo {
   /* background: white; */
   padding: 25px;
   margin: 0 auto;
   position: relative;
   top: 100px;
 }
+
 /*****************************************/
 
 header {
@@ -369,6 +372,10 @@ header p {
   color: #005bea;
   position: absolute;
   bottom: 40px;
+}
+
+.svg-photo {
+  animation: down-arrow 10s ease-in-out infinite;
 }
 
 .arrow-Down {
@@ -1204,7 +1211,7 @@ header {
 
 .Features-section {
   text-align: center;
-  background: rgba(0,25,170,0.5);
+  background: rgba(0, 25, 170, 0.5);
   color: black;
   font-size: 3em;
 }
@@ -1238,49 +1245,54 @@ header {
   background: cyan;
 }
 
-.title-section{
+.title-section {
   color: black;
   margin-left: 5%;
   width: 70%;
   background: #00c6fb;
-    background-image: linear-gradient(to right, #00c6fb 0%, #005bea 150%);
+  background-image: linear-gradient(to right, #00c6fb 0%, #005bea 150%);
   /* #00c6fb 0%, #005bea */
   box-shadow: -7px 10px 0px purple;
 }
+
 /* ********************** Grid ********************** */
+
 .grid-container {
   display: grid;
-  grid-column-gap: 7px;
-  grid-row-gap: 10px;
   grid-template-columns: auto auto;
+  grid-gap: 12px;
+  background-color: coral;
   padding: 10px;
 }
+
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(0, 0, 0, 0.75);
-  width: 165px;
-  height: 165px;
-  /* padding: 12px; */
-  /* margin: 0 auto; */
-  /* vertical-align: middle; */
-  font-size: 30px;
+  opacity: 0;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
+  padding: 7px;
 }
 
-.grid-content{
-  font-size: 0.75em;
-  margin: auto 5px 0px;
+.gridAnimate {
+  animation: gridAnimation 0.25s linear forwards;
+  /* animation: float-Show 0.5s ease-in-out forwards; */
 }
-.grid-content.one{
-  height: 77%;
-  background: cyan;
-}
-.grid-content.two{
-  font-size: 0.55em;
-  background: yellow;
+
+@keyframes gridAnimation {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* ********************** Grid ********************** */
+
+/* ***************************** Example ***************************** */
+
+/* ***************************** Example ***************************** */
+
 .skills {
   display: block;
   margin: 0 auto;
@@ -1289,7 +1301,7 @@ header {
   text-align: center;
 }
 
-.p-skills{
+.p-skills {
   text-align: center;
   margin: 0 auto;
   width: 75%;
