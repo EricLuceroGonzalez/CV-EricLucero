@@ -9,7 +9,7 @@ function scrollSurprise() {
   var gridItem3 = document.querySelectorAll(".grid-item-row3");
   var show1 = 240;
   var show2 = 350;
-  var show3 = 450;
+  var show3 = 475;
   var showEnd = 500;
   if ((topDistance >= show1) && (topDistance < show2)) {
     // console.log("Scrolled = " + topDistance);
@@ -54,9 +54,4 @@ function scrollSurprise() {
       allGridItem[i].classList.remove("gridAnimate");
     }
   }
-  // if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-  //   document.getElementById('downArrow').classList.add("floatDiv-Hide");
-  // } else {
-  //   document.getElementById('downArrow').classList.remove("floatDiv-Hide");
-  // }
 }

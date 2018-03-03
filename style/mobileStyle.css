@@ -283,7 +283,7 @@ a:focus, a:hover {
 }
 
 .closeCircle {
-  animation: divClose-rotate 1.1s ease-in-out forwards;
+  animation: divClose-rotate 0.85s ease-in-out forwards;
 }
 
 @keyframes divClose-rotate {
@@ -297,17 +297,25 @@ a:focus, a:hover {
     opacity: 0.5;
   }
   60% {
-    transform: rotate(20deg);
+    transform: scale(0.2);
+    /* transform: rotate(20deg); */
   }
   80% {
-    transform: rotate(30deg);
+    transform: scale(0.5);
+    /* transform: rotate(30deg); */
   }
   90% {
-    transform: rotate(120deg);
+    transform: scale(1.4);
+    /* transform: rotate(120deg); */
+  }
+  80% {
+    transform: scale(1.1);
+    /* transform: rotate(120deg); */
   }
   100% {
     opacity: 1;
-    transform: rotate(-90deg);
+    transform: scale(1);
+    /* transform: rotate(-90deg); */
   }
 }
 
@@ -1265,9 +1273,19 @@ header {
   padding: 10px;
 }
 
+@media (min-width: 600px) and (max-width: 700px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 12px;
+    background-color: coral;
+    padding: 10px;
+  }
+}
+
 .grid-item {
   opacity: 0;
-  font-size: 20px;
+  font-size: 12px;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   padding: 7px;
@@ -1288,6 +1306,16 @@ header {
 }
 
 /* ********************** Grid ********************** */
+
+#svgBrowser1 {
+  stroke: rgba(252, 110, 144, 0.5);
+  stroke-width: 2;
+  fill: none;
+}
+
+svg {
+  outline: 1px dashed black;
+}
 
 /* ***************************** Example ***************************** */
 
