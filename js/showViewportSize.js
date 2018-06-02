@@ -8,7 +8,7 @@ window.onscroll = function() {
 function getCoords(elem) {
   let box = elem.getBoundingClientRect();
   // your size calculation code here
-  document.getElementById("screenYposition").textContent = "scrolled = " + Math.floor(pageYOffset);
+  document.getElementById("screenYposition").textContent = "scrolled = " + Math.floor(pageYOffset) + " px";
   return {
     top: box.top + pageYOffset,
     left: box.left + pageXOffset
@@ -29,24 +29,24 @@ function scrollSurprise() {
     // console.log("Scrolled = " + topDistance);
     for (var i = 0; i < gridItem1.length; i++) {
       gridItem1[i].classList.add("gridAnimate");
-      document.getElementById('screenYposition').style.backgroundColor = 'rgba(238, 89, 89, 1)';
+      document.getElementById('screenYPs-div').style.borderBottom = '2px solid rgba(238, 89, 89, 1)';
     }
   } else if ((topDistance >= show2) && (topDistance < show3)) {
     // console.log("\t Scrolled 2 = " + topDistance);
     for (var i = 0; i < gridItem2.length; i++) {
       gridItem2[i].classList.add("gridAnimate");
-      document.getElementById('screenYposition').style.backgroundColor = 'rgba(255, 0, 145, 0.97)';
+      document.getElementById('screenYPs-div').style.borderBottom = '2px solid rgba(255, 0, 145, 0.97)';
     }
   } else if ((topDistance >= show3) && (topDistance < showEnd)) {
     // console.log("\t\t Scrolled 3 = " + topDistance);
     for (var i = 0; i < gridItem3.length; i++) {
       gridItem3[i].classList.add("gridAnimate");
-      document.getElementById('screenYposition').style.backgroundColor = 'rgba(255, 0, 145, 0.97)';
+      document.getElementById('screenYPs-div').style.borderBottom = '2px solid rgba(255, 0, 145, 0.97)';
     }
   } else if ((topDistance >= 550) && (topDistance < 1500)) {
     // Show all the shit out!!!
     // console.log("\t\t\t Scrolled 2 = " + topDistance);
-    document.getElementById('screenYposition').style.backgroundColor = 'rgba(254, 30, 30, 0.97)';
+    document.getElementById('screenYPs-div').style.borderBottom = '2px solid rgba(254, 30, 30, 0.97)';
     document.getElementById('divChatMe').style.opacity = "1";
     document.getElementById('dimensions').style.opacity = "1";
     document.getElementById('underConstr').style.opacity = "1";
@@ -56,12 +56,12 @@ function scrollSurprise() {
     document.getElementById('divChatMe').classList.remove("floatDiv-Hide");
     document.getElementById('dimensions').classList.remove("floatDiv-Hide");
     document.getElementById('underConstr').classList.remove("floatDiv-Hide");
-  } else if (topDistance >= 1500) {
-    document.getElementById('screenYposition').style.backgroundColor = 'rgb(255, 106, 51)';
+  } else if (topDistance >= 1750) {
+    document.getElementById('screenYPs-div').style.borderBottom = '2px solid rgb(255, 106, 51)';
     document.getElementById('svg-IDframe2').classList.add("svg-frame2");
     document.getElementById('svg-IDframe3').classList.add("svg-frame3");
   } else {
-    document.getElementById('screenYposition').style.backgroundColor = 'rgb(255, 56, 56)';
+    document.getElementById('screenYPs-div').style.borderBottom = '2px solid rgb(255, 56, 56)';
     document.getElementById('divChatMe').classList.remove("floatDivShow");
     document.getElementById('dimensions').classList.remove("floatDivShow");
     document.getElementById('underConstr').classList.remove("floatDivShow");
@@ -82,8 +82,6 @@ function scrollSurprise() {
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 var modalBtn = document.getElementsByClassName('modalBtn');
-console.log("modalBtn.length : " + modalBtn.length);
-
 var btn = document.getElementsByClassName("click-to-open");
 
 for (var i = 0; i < btn.length; i++) {
@@ -99,7 +97,6 @@ window.onclick = function(event) {
   var modalDiv = document.getElementsByClassName("modal");
   for (var i = 0; i < modalDiv.length; i++) {
     var thisModal = modalDiv[i];
-    console.log("modalDiv: " + modalDiv.length);
     if (event.target == thisModal) {
       thisModal.style.display = "none";
     }

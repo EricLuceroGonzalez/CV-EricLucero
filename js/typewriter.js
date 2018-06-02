@@ -6,7 +6,6 @@ window.onload = function() {
   // elem =   document.getElementById("screenYposition");
   var elements = document.getElementsByClassName('typewrite');
   // var elementsTwo = document.getElementsByClassName('typewriteTwo');
-console.log("elements.length = " + elements.length);
   createObjectTypewriter(elements);
   // createObjectTypewriter(elementsTwo);
 

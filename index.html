@@ -443,8 +443,29 @@
   </div>
   <!--**************************** Div-Skills3 ****************************-->
 
-  <!-- <div id="modal-window-one" class="modal-window modal">AAAA</div> -->
-  <!-- <div id="modal-window-two" class="modal-window modal">BBBBB</div> -->
+  <!-- The Modal -->
+  <div id="modal-window-Whatsapp" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span onclick="document.getElementById('modal-window-Whatsapp').style.display='none'" class="closeModal w3-button w3-display-topright">&times;</span>
+        <h2>Whatsapp!</h2>
+      </div>
+      <div class="modal-body">
+          <div class="divContact" style="margin-top:20px" onclick="location.href='https://api.whatsapp.com/api/send?phone=50769825076';">
+            <!-- <a href="" target="_blank" class="fab fa-whatsapp contact"></a> -->
+            WhatsApp <i class="fab fa-whatsapp"></i>
+            <!-- WhatsApp
+            <div style="font-size:0.5em">Dont hesitate</div> -->
+          </div>
+      </div>
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div>
+    </div>
+
+  </div>
+  <!-- /************************  Modals  ************************/ -->
 
 
   <button class="click-to-open divAsButton" data-modal="modal-window-one">will open modal one </button> //will open modal one
@@ -452,12 +473,14 @@
 
 
   <!-- /************************  Float divs  ************************/ -->
-  <div id="divChatMe" class="whatsapp-floatDiv floatDIV"> Chat Me! <i class="fab fa-whatsapp"></i></a>
-  </div>
-
+  <div id="divChatMe" class="click-to-open whatsapp-floatDiv floatDIV" data-modal="modal-window-Whatsapp">
+    Chat Me! <i class="fab fa-whatsapp"></i></a>  </div>
   <!-- <div id="divDesc" class="divDescarga floatDIV"><a href="media/00-CV-EricLucero-2018.pdf" download>Descargar PDF<i class="fas fa-file-pdf"></i></a>
   </div> -->
-  <p id="screenYposition"> </p>
+
+<div id="screenYPs-div">
+    <p id="screenYposition"> </p>
+</div>
 
   <p id="dimensions" class="floatDIV"></p>
   <div id="underConstr" class="floatDIV">
