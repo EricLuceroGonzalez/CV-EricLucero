@@ -1079,7 +1079,8 @@
     bottom: 0.5px;
     left: 48%;
   }
-  #screenYPs-div{
+
+  #screenYPs-div {
     width: 10%;
     height: 20px;
     border-bottom: 2px solid red;
@@ -1087,6 +1088,7 @@
     top: 1%;
     left: 3px;
   }
+
   #screenYposition {
     /* background-color: red; */
     color: white;
@@ -1503,9 +1505,9 @@
     background-color: #fefefe;
     width: 92%;
     -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.8s;
+    -webkit-animation-duration: 0.6s;
     animation-name: slideIn;
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     box-shadow: 7px 6px 9px rgba(0, 0, 0, 0.5);
   }
 
@@ -1586,3 +1588,69 @@
   }
 
   /* *********************** For the Modalds *********************** */
+
+  /* *********************** For the Sections *********************** */
+
+  /* @media (min-width: 435px) and (max-width: 700px) { */
+
+  .section-skill-left, .section-skill-right {
+    display: flex;
+    flex-flow: column;
+    padding: 20px 38px;
+    border: 1px solid red;
+  }
+  .bg-one{
+      background: rgba(35, 191, 173, 0.62);
+  }
+  .bg-two{
+      background: rgba(99, 34, 182, 0.62);
+  }
+
+
+  .alignLeft, .alignRight {
+    text-align: right;
+  }
+
+  .section-img-div {
+    text-align: center;
+    margin: auto 3% auto 3%;
+  }
+
+  .section-text-div {
+    line-height: 1.1;
+    margin: auto 2px auto 1%;
+    border: 1px dashed pink;
+    text-align: justify;
+  }
+
+  @media screen and (max-width: 435px) {
+    .section-skill-left {
+      display: flex;
+      flex-flow: column;
+    }
+    /* To change order of figure and text */
+    .section-text-div {
+      order: 2;
+    }
+    .section-img-div {
+      order: 1;
+    }
+  }
+
+  @media (min-width: 435px) {
+    .alignLeft {
+      text-align: left;
+    }
+    .section-skill-right {
+      display: grid;
+      grid-template-columns: minmax(100px, 400px) auto;
+      grid-gap: 2px;
+    }
+    .section-skill-left {
+      display: grid;
+      grid-template-columns: auto minmax(100px, 400px);
+      grid-gap: 2px;
+    }
+  }
+
+  /* *********************** For the Sections *********************** */
